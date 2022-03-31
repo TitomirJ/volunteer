@@ -16,7 +16,6 @@ import {
     selectProjectsLoading
 } from './redux/projects';
 import Loader from './components/Loader';
-import ProjectItem from './pages/Projects/ProjectItem';
 
 const App = (props) => {
     const {

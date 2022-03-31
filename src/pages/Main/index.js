@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 import InfoNav from '../../components/InfoNav';
 import Header from '../../containers/Header';

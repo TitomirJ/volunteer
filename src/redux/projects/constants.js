@@ -1,0 +1,3 @@
+export const GET_PROJECTS_REQUEST = 'projects/GET_PROJECTS_REQUEST';
+export const GET_PROJECTS_SUCCESS = 'projects/GET_PROJECTS_SUCCESS';
+export const GET_PROJECTS_ERROR = 'projects/GET_PROJECTS_ERROR';

@@ -30,6 +30,7 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex!important',
         justifyContent: 'space-between',
         alignItems: 'center',
+        background: 'transparent',
     },
     socialIconsBlock: {
         width: '300px',

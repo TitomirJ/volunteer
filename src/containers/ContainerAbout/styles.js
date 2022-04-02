@@ -9,6 +9,7 @@ export const useStyles = makeStyles({
         textTransform: 'uppercase',
         color: '#56555F',
         fontWeight: 500,
+        position: 'relative',
 
         '& span': {
             fontWeight: 700,

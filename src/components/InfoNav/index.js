@@ -32,6 +32,14 @@ const InfoNav = () => {
         }
     }, [matches]);
 
+    useEffect(() => {
+        const onScroll = () => setMenuOpened(false);
+        // clean up code
+        window.removeEventListener('scroll', onScroll);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     return (
         <>
             <AppBar style={{background: 'transparent'}}>

@@ -7,72 +7,76 @@ import TeamMemberOne from '../../assests/images/IMG_4558.png';
 import TeamMemberTwo from '../../assests/images/IMG_4559.png';
 import TeamMemberThree from '../../assests/images/photo_2022-03-28_13-05-16.jpg';
 import TeamMemberFour from '../../assests/images/photo_2022-03-28_13-48-01.jpg';
-import { useStyles } from './styles';
 import Button from '../../components/Button';
+import LineBg from '../../components/LineBg';
+import { useStyles } from './styles';
 
 const ContainerOurTeam = () => {
     const classes = useStyles();
 
     return (
-        <Container maxWidth="md" style={{marginTop: "57px", marginBottom: "140px"}}>
-            <Title
-                title="наша команда"
-            />
-            <Grid
-                container
-                spacing={4}
-                style={{marginTop: '60px'}}
-            >
+        <div style={{position: 'relative', padding: '2px 0'}}>
+            <LineBg color="#FFFAE1"/>
+            <Container maxWidth="md" style={{marginTop: "57px", marginBottom: "140px"}}>
+                <Title
+                    title="наша команда"
+                />
                 <Grid
                     container
-                    direction="column"
-                    alignItems="center"
-                    item
-                    xs={12}
-                    md={6}
-                    lg={3}
+                    spacing={4}
+                    style={{marginTop: '60px'}}
                 >
-                    <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberOne})`}}/>
-                    <Button variant="outlinePrimary">евгений <br/> самойленко</Button>
+                    <Grid
+                        container
+                        direction="column"
+                        alignItems="center"
+                        item
+                        xs={12}
+                        md={6}
+                        lg={3}
+                    >
+                        <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberOne})`}}/>
+                        <Button variant="outlinePrimary">евгений <br/> самойленко</Button>
+                    </Grid>
+                    <Grid
+                        container
+                        direction="column"
+                        alignItems="center"
+                        item
+                        xs={12}
+                        md={6}
+                        lg={3}
+                    >
+                        <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberTwo})`}}/>
+                        <Button variant="outlinePrimary">дарья <br/> игнатьева</Button>
+                    </Grid>
+                    <Grid
+                        container
+                        direction="column"
+                        alignItems="center"
+                        item
+                        xs={12}
+                        md={6}
+                        lg={3}
+                    >
+                        <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberThree})`}}/>
+                        <Button variant="outlinePrimary">владислав <br/> шевченко</Button>
+                    </Grid>
+                    <Grid
+                        container
+                        direction="column"
+                        alignItems="center"
+                        item
+                        xs={12}
+                        md={6}
+                        lg={3}
+                    >
+                        <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberFour})`}}/>
+                        <Button variant="outlinePrimary">юлианна <br/> кушнир</Button>
+                    </Grid>
                 </Grid>
-                <Grid
-                    container
-                    direction="column"
-                    alignItems="center"
-                    item
-                    xs={12}
-                    md={6}
-                    lg={3}
-                >
-                    <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberTwo})`}}/>
-                    <Button variant="outlinePrimary">дарья <br/> игнатьева</Button>
-                </Grid>
-                <Grid
-                    container
-                    direction="column"
-                    alignItems="center"
-                    item
-                    xs={12}
-                    md={6}
-                    lg={3}
-                >
-                    <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberThree})`}}/>
-                    <Button variant="outlinePrimary">владислав <br/> шевченко</Button>
-                </Grid>
-                <Grid
-                    container
-                    direction="column"
-                    alignItems="center"
-                    item
-                    xs={12}
-                    md={6}
-                    lg={3}
-                >
-                    <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberFour})`}}/>
-                    <Button variant="outlinePrimary">юлианна <br/> кушнир</Button>
-                </Grid>
-            </Grid>
-        </Container>
+            </Container>
+        </div>
     )
 };
 

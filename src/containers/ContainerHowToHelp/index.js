@@ -6,13 +6,17 @@ import Title from '../../components/Title';
 import { useStyles } from './styles';
 import Button from '../../components/Button';
 import CardIcon from '../../assests/icons/CardIcon';
+import LineBg from '../../components/LineBg';
 
 const ContainerHowToHelp = () => {
     const classes = useStyles();
 
     return (
         <div id="howToHelp" className={classes.container}>
-            <Container maxWidth="md">
+            <LineBg color="rgb(255 242 175)"/>
+            <Container
+                maxWidth="md"
+            >
                 <Title
                     title="как помочь"
                 />

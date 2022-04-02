@@ -25,7 +25,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     subMain: {
-        backdropFilter: 'blur(10px) brightness(80%)',
+        backdropFilter: 'blur(10px) brightness(40%)',
         height: '130px',
         display: 'flex!important',
         justifyContent: 'space-between',

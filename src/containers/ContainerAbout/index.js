@@ -6,13 +6,17 @@ import { useStyles } from './styles';
 import Button from '../../components/Button';
 import Title from '../../components/Title';
 import SubTitle from '../../components/SubTitle';
+import LineBg from '../../components/LineBg';
 
 const ContainerAbout = () => {
     const classes = useStyles();
 
     return (
         <div id="aboutUs" className={classes.wrapper}>
-            <Container maxWidth="md">
+            <LineBg color="#EBF8FF"/>
+            <Container
+                maxWidth="md"
+            >
                 <Title
                     title="БФ „Назустріч життю“"
                 />

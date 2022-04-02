@@ -16,6 +16,7 @@ import {
     selectProjectsLoading
 } from './redux/projects';
 import Loader from './components/Loader';
+import Contacts from './pages/Contacts';
 
 const App = (props) => {
     const {
@@ -54,6 +55,12 @@ const App = (props) => {
                                             {...props}
                                             projectsList={projectsList}
                                         />
+                                    }
+                                />
+                                <Route
+                                    path="/contacts"
+                                    component={() =>
+                                        <Contacts/>
                                     }
                                 />
                             </Switch>

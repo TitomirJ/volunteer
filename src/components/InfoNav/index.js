@@ -89,7 +89,7 @@ const InfoNav = () => {
                                         <NavHashLink smooth to="/#aboutUs">КТО МЫ</NavHashLink>
                                         <NavHashLink smooth to="/#howToHelp">КАК ПОМОЧЬ</NavHashLink>
                                         <Link to="/projects">ПРОЕКТЫ</Link>
-                                        <p>КOНТАКТЫ</p>
+                                        <Link to="/contacts">КOНТАКТЫ</Link>
                                     </div>
                                     <div className={classes.socialIconsBlock}>
                                         <LinkedInIcon
@@ -138,7 +138,7 @@ const InfoNav = () => {
                                     <NavHashLink smooth to="/#aboutUs">КТО МЫ</NavHashLink>
                                     <NavHashLink smooth to="/#howToHelp">КАК ПОМОЧЬ</NavHashLink>
                                     <Link to="/projects">ПРОЕКТЫ</Link>
-                                    <p>КOНТАКТЫ</p>
+                                    <Link to="/contacts">КOНТАКТЫ</Link>
                                 </div>
                             }
                             <Button

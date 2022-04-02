@@ -14,6 +14,7 @@ import TwitterIcon from '../../assests/icons/TwitterIcon';
 import LogoImg from '../../assests/images/Logo.png';
 import { useStyles } from './styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
     const classes = useStyles();
@@ -38,8 +39,8 @@ const Footer = () => {
                             <div className={classes.menu}>
                                 <NavHashLink smooth to="/#aboutUs">КТО МЫ</NavHashLink>
                                 <NavHashLink smooth to="/#howToHelp">КАК ПОМОЧЬ</NavHashLink>
-                                <p>ПРОЕКТЫ</p>
-                                <p>КOНТАКТЫ</p>
+                                <Link to="/projects">ПРОЕКТЫ</Link>
+                                <Link to="/contacts">КOНТАКТЫ</Link>
                             </div>
                     }
                     <Button

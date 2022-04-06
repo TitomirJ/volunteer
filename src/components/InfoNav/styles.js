@@ -32,6 +32,9 @@ export const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         background: 'transparent',
     },
+    sub: {
+        backdropFilter: 'none',
+    },
     socialIconsBlock: {
         width: '300px',
         display: 'flex',

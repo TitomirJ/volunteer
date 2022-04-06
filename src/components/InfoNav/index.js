@@ -152,7 +152,7 @@ const InfoNav = () => {
                 {
                     !menuOpened &&
                     <Toolbar className={classes.subMain}>
-                        <Container style={{backdropFilter: "none"}} className={classes.subMain} maxWidth="md">
+                        <Container className={`${classes.subMain} ${classes.sub}`} maxWidth="md">
                             <NavHashLink smooth to="/#header" className={classes.logo}>
                                 <img src={LogoImg} alt=""/>
                             </NavHashLink>

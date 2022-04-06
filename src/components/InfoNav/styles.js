@@ -65,7 +65,9 @@ export const useStyles = makeStyles((theme) => ({
     },
     linksToContact: {
         fontWeight: 'bold',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        color: 'white',
+        textDecoration: 'none'
     },
     menu: {
         display: 'flex',

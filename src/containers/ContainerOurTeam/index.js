@@ -3,8 +3,8 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
 import Title from '../../components/Title';
-import TeamMemberOne from '../../assests/images/IMG_4558.png';
-import TeamMemberTwo from '../../assests/images/IMG_4559.png';
+import TeamMemberOne from '../../assests/images/IMG_4558.JPG';
+import TeamMemberTwo from '../../assests/images/IMG_4559.PNG';
 import TeamMemberThree from '../../assests/images/photo_2022-03-28_13-05-16.jpg';
 import TeamMemberFour from '../../assests/images/photo_2022-03-28_13-48-01.jpg';
 import Button from '../../components/Button';
@@ -36,7 +36,9 @@ const ContainerOurTeam = () => {
                         lg={3}
                     >
                         <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberOne})`}}/>
-                        <Button variant="outlinePrimary">евгений <br/> самойленко</Button>
+                        <a style={{textDecoration: 'none'}} target="_blank" href="https://www.instagram.com/e.v.samoylenko">
+                            <Button variant="outlinePrimary">евгений <br/> самойленко</Button>
+                        </a>
                     </Grid>
                     <Grid
                         container
@@ -48,7 +50,9 @@ const ContainerOurTeam = () => {
                         lg={3}
                     >
                         <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberTwo})`}}/>
-                        <Button variant="outlinePrimary">дарья <br/> игнатьева</Button>
+                        <a style={{textDecoration: 'none'}} target="_blank" href="https://instagram.com/d.ignateva">
+                            <Button variant="outlinePrimary">дарья <br/> игнатьева</Button>
+                        </a>
                     </Grid>
                     <Grid
                         container
@@ -60,7 +64,9 @@ const ContainerOurTeam = () => {
                         lg={3}
                     >
                         <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberThree})`}}/>
-                        <Button variant="outlinePrimary">владислав <br/> шевченко</Button>
+                        <a style={{textDecoration: 'none'}} target="_blank" href="https://instagram.com/ukrvsh">
+                            <Button variant="outlinePrimary">владислав <br/> шевченко</Button>
+                        </a>
                     </Grid>
                     <Grid
                         container
@@ -72,7 +78,9 @@ const ContainerOurTeam = () => {
                         lg={3}
                     >
                         <div className={classes.blockImg} style={{backgroundImage: `url(${TeamMemberFour})`}}/>
-                        <Button variant="outlinePrimary">юлианна <br/> кушнир</Button>
+                        <a style={{textDecoration: 'none'}} target="_blank" href="https://www.instagram.com/yuliana_kushnir">
+                            <Button variant="outlinePrimary">юлианна <br/> кушнир</Button>
+                        </a>
                     </Grid>
                 </Grid>
             </Container>

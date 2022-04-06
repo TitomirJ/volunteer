@@ -20,50 +20,50 @@ const ContainerSocial = () => {
                 title={<>больше информации в наших <br/> социальных сетях:</>}
             />
             <div className={classes.social}>
-                <div className={classes.socialIcon}>
+                <a target="_blank"  href="https://www.linkedin.com/company/nazustrichzhittyu" className={classes.socialIcon}>
                     <LinkedInIcon
                         width="37"
                         height="37"
                         color="#2E4E6C"
                     />
                     <p>LinkedIn</p>
-                </div>
+                </a>
                 <div className={classes.line}> </div>
-                <div className={classes.socialIcon}>
+                <a href="tel:+380 (98) 157 68 90" className={classes.socialIcon}>
                     <PhoneIcon
                         width="37"
                         height="37"
                         color="#2E4E6C"
                     />
                     <p>viber</p>
-                </div>
+                </a>
                 <div className={classes.line}> </div>
-                <div className={classes.socialIcon}>
+                <a target="_blank"  href="https://instagram.com/towardslife2.0" className={classes.socialIcon}>
                     <InstagramIcon
                         width="37"
                         height="37"
                         color="#2E4E6C"
                     />
                     <p>Instagram</p>
-                </div>
+                </a>
                 <div className={classes.line}> </div>
-                <div className={classes.socialIcon}>
+                <a target="_blank"  href="https://www.facebook.com/bftowardslife" className={classes.socialIcon}>
                     <FacebookIcon
                         width="37"
                         height="37"
                         color="#2E4E6C"
                     />
                     <p>Facebook</p>
-                </div>
+                </a>
                 <div className={classes.line}> </div>
-                <div className={classes.socialIcon}>
+                <a target="_blank"  href="https://t.me/nazustrichzhittyu" className={classes.socialIcon}>
                     <TelegramIcon
                         width="37"
                         height="37"
                         color="#2E4E6C"
                     />
                     <p>telegram</p>
-                </div>
+                </a>
                 <div className={classes.line}> </div>
                 <div className={classes.socialIcon}>
                     <YoutubeIcon
@@ -74,14 +74,14 @@ const ContainerSocial = () => {
                     <p>youtube</p>
                 </div>
                 <div className={classes.line}> </div>
-                <div className={classes.socialIcon}>
+                <a target="_blank"  href="https://twitter.com/nazustrichzhit1" className={classes.socialIcon}>
                     <TwitterIcon
                         width="37"
                         height="37"
                         color="#2E4E6C"
                     />
                     <p>Twitter</p>
-                </div>
+                </a>
             </div>
         </Container>
     )

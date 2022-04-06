@@ -48,14 +48,14 @@ const InfoNav = () => {
                         {
                             !menuOpened &&
                                 <>
-                                    <div className={classes.linksToContact}>
-                                        +380 930 309 4848
-                                    </div>
+                                    <a href="tel:+380 (98) 157 68 90" className={classes.linksToContact}>
+                                        +380 (98) 157 68 90
+                                    </a>
                                     {
                                         !xsDevice &&
-                                        <div className={classes.linksToContact}>
+                                        <a href="mailto:bfIlovelife@gmail.com" className={classes.linksToContact}>
                                             bfIlovelife@gmail.com
-                                        </div>
+                                        </a>
                                     }
                                 </>
                         }
@@ -63,13 +63,25 @@ const InfoNav = () => {
                             matches
                                 ?
                                     <div className={classes.socialIconsBlock}>
-                                        <LinkedInIcon/>
-                                        <PhoneIcon/>
-                                        <InstagramIcon/>
-                                        <FacebookIcon/>
-                                        <TelegramIcon/>
+                                        <a target="_blank"  href="https://www.linkedin.com/company/nazustrichzhittyu">
+                                            <LinkedInIcon/>
+                                        </a>
+                                        <a href="tel:+380 (98) 157 68 90">
+                                            <PhoneIcon/>
+                                        </a>
+                                        <a target="_blank"  href="https://instagram.com/towardslife2.0">
+                                            <InstagramIcon/>
+                                        </a>
+                                        <a target="_blank"  href="https://www.facebook.com/bftowardslife">
+                                            <FacebookIcon/>
+                                        </a>
+                                        <a target="_blank"  href="https://t.me/nazustrichzhittyu">
+                                            <TelegramIcon/>
+                                        </a>
                                         <YoutubeIcon/>
-                                        <TwitterIcon/>
+                                        <a target="_blank"  href="https://twitter.com/nazustrichzhit1">
+                                            <TwitterIcon/>
+                                        </a>
                                     </div>
                                 :
                                     <div style={{float: 'right'}} onClick={() => setMenuOpened(prevState => !prevState)}>
@@ -92,34 +104,46 @@ const InfoNav = () => {
                                         <Link to="/contacts">КOНТАКТЫ</Link>
                                     </div>
                                     <div className={classes.socialIconsBlock}>
-                                        <LinkedInIcon
-                                            width="30"
-                                            height="30"
-                                        />
-                                        <PhoneIcon
-                                            width="30"
-                                            height="30"
-                                        />
-                                        <InstagramIcon
-                                            width="30"
-                                            height="30"
-                                        />
-                                        <FacebookIcon
-                                            width="30"
-                                            height="30"
-                                        />
-                                        <TelegramIcon
-                                            width="30"
-                                            height="30"
-                                        />
+                                        <a target="_blank"  href="https://www.linkedin.com/company/nazustrichzhittyu">
+                                            <LinkedInIcon
+                                                width="30"
+                                                height="30"
+                                            />
+                                        </a>
+                                        <a href="tel:+380 (98) 157 68 90">
+                                            <PhoneIcon
+                                                width="30"
+                                                height="30"
+                                            />
+                                        </a>
+                                        <a target="_blank"  href="https://instagram.com/towardslife2.0">
+                                            <InstagramIcon
+                                                width="30"
+                                                height="30"
+                                            />
+                                        </a>
+                                        <a target="_blank"  href="https://www.facebook.com/bftowardslife">
+                                            <FacebookIcon
+                                                width="30"
+                                                height="30"
+                                            />
+                                        </a>
+                                        <a target="_blank"  href="https://t.me/nazustrichzhittyu">
+                                            <TelegramIcon
+                                                width="30"
+                                                height="30"
+                                            />
+                                        </a>
                                         <YoutubeIcon
                                             width="30"
                                             height="30"
                                         />
-                                        <TwitterIcon
-                                            width="30"
-                                            height="30"
-                                        />
+                                        <a target="_blank"  href="https://twitter.com/nazustrichzhit1">
+                                            <TwitterIcon
+                                                width="30"
+                                                height="30"
+                                            />
+                                        </a>
                                     </div>
                                 </>
                         }
@@ -128,7 +152,7 @@ const InfoNav = () => {
                 {
                     !menuOpened &&
                     <Toolbar className={classes.subMain}>
-                        <Container className={classes.subMain} maxWidth="md">
+                        <Container style={{backdropFilter: "none"}} className={classes.subMain} maxWidth="md">
                             <NavHashLink smooth to="/#header" className={classes.logo}>
                                 <img src={LogoImg} alt=""/>
                             </NavHashLink>

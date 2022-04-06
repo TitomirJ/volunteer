@@ -10,6 +10,7 @@ export const useStyles = makeStyles({
         fontWeight: '600',
         fontSize: '16px!important',
         padding: '17px 30px!important',
+        textDecoration: 'none',
 
         ["@media (max-width: 1024px)"]: {
             fontSize: '12px!important',

@@ -19,8 +19,10 @@ export const useStyles = makeStyles({
             fontSize: '20px',
         },
 
-        '& p': {
-            margin: '13px 0'
+        '& a': {
+            margin: '13px 0',
+            color: '#FFF8D1',
+            textDecoration: 'none'
         },
 
         '& span': {

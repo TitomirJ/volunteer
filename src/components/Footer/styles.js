@@ -8,7 +8,9 @@ export const useStyles = makeStyles({
     },
     linksToContact: {
         fontWeight: 'bold',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        color: 'white',
+        textDecoration: 'none'
     },
     socialIconsBlock: {
         width: '300px',

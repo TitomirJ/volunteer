@@ -21,9 +21,9 @@ const Main = ({projectsList}) => {
             <main>
                 <ContainerAbout/>
                 <ContainerHowToHelp/>
-                <ContainerWhatWeDid
-                    projectsList={projectsList}
-                />
+                {/*<ContainerWhatWeDid*/}
+                {/*    projectsList={projectsList}*/}
+                {/*/>*/}
                 <ContainerSocial/>
                 <ContainerOurTeam/>
             </main>

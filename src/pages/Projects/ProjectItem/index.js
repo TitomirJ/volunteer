@@ -4,12 +4,12 @@ import Container from '@mui/material/Container';
 import InfoNav from '../../../components/InfoNav';
 import Footer from '../../../components/Footer';
 import Loader from '../../../components/Loader';
+import LineBg from '../../../components/LineBg';
 import Title from '../../../components/Title';
 import SuccessLinear from '../../../components/SuccessLinear';
 import Button from '../../../components/Button';
 
 import { useStyles } from './styles';
-import LineBg from '../../../components/LineBg';
 
 const ProjectItem = (props) => {
     const [currentProject, setCurrentProject] = useState(null);
@@ -68,14 +68,11 @@ const ProjectItem = (props) => {
                                             title="отчет о сборе средств"
                                         />
                                         {
-                                            currentProject.files.map((item, index) =>
-                                                <img
-                                                    className={classes.img}
-                                                    key={index}
-                                                    src={`https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`}
-                                                    alt=""
-                                                />
-                                            )
+                                            currentProject.files.map((item, index) => {
+                                                return (
+                                                    <iframe key={index} style={{marginTop: '100px', width: '100%', height: '600px'}} src={`https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`}> </iframe>
+                                                )
+                                            })
                                         }
                                     </Container>
                                 </div>

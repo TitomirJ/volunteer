@@ -3,7 +3,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import { useStyles } from './styles';
 
-import Button from '../../components/Button';
 import Title from '../../components/Title';
 import LineBg from '../../components/LineBg';
 
@@ -28,9 +27,9 @@ const WhichProjectsDone = ({projectsList}) => {
                             >
                                 <div className={classes.block}>
                                     <div className={classes.blockImg} style={{backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${project.titleImage})`}}> </div>
-                                    <Button to={`/projects/${project.id}`} variant="outlinePrimary">
+                                    <a className={classes.button} target="_blank" href={`https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${project.files[0]}`} download>
                                         <span>{project.startDate} - {project.endDate} <br/> Посмотреть</span>
-                                    </Button>
+                                    </a>
                                 </div>
                             </Grid>
                         )

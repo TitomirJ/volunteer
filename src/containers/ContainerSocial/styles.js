@@ -22,6 +22,7 @@ export const useStyles = makeStyles({
         alignItems: 'center',
         textTransform: 'uppercase',
         color: '#2E4E6C',
+        textDecoration: 'none',
     },
     line: {
         width: '2px',

@@ -57,25 +57,37 @@ const Footer = () => {
                     justifyContent="space-between"
                     style={{marginTop: '30px'}}
                 >
-                    <div className={classes.linksToContact}>
-                        +380 930 309 4848
-                    </div>
+                    <a href="tel:+380 (98) 157 68 90" className={classes.linksToContact}>
+                        +380 (98) 157 68 90
+                    </a>
                     {
                         !xsDevice &&
-                        <div className={classes.linksToContact}>
+                        <a href="mailto:bfIlovelife@gmail.com" className={classes.linksToContact}>
                             bfIlovelife@gmail.com
-                        </div>
+                        </a>
                     }
                     {
                         matches &&
                         <div className={classes.socialIconsBlock}>
-                            <LinkedInIcon/>
-                            <PhoneIcon/>
-                            <InstagramIcon/>
-                            <FacebookIcon/>
-                            <TelegramIcon/>
+                            <a target="_blank" href="https://www.linkedin.com/company/nazustrichzhittyu">
+                                <LinkedInIcon/>
+                            </a>
+                            <a href="tel:+380 (98) 157 68 90">
+                                <PhoneIcon/>
+                            </a>
+                            <a target="_blank"  href="https://instagram.com/towardslife2.0">
+                                <InstagramIcon/>
+                            </a>
+                            <a target="_blank"  href="https://www.facebook.com/bftowardslife">
+                                <FacebookIcon/>
+                            </a>
+                            <a target="_blank"  href="https://t.me/nazustrichzhittyu">
+                                <TelegramIcon/>
+                            </a>
                             <YoutubeIcon/>
-                            <TwitterIcon/>
+                            <a target="_blank"  href="https://twitter.com/nazustrichzhit1">
+                                <TwitterIcon/>
+                            </a>
                         </div>
                     }
                 </Grid>

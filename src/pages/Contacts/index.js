@@ -39,7 +39,9 @@ const Contacts = () => {
                                         height="60"
                                         color="#FFF8D1"
                                     />
-                                    <p>+380 930 309 4848</p>
+                                    <a href="tel:+380 (98) 157 68 90">
+                                        +380 (98) 157 68 90
+                                    </a>
                                     <span>телефон</span>
                                 </div>
                             </Grid>
@@ -50,7 +52,7 @@ const Contacts = () => {
                                         height="60"
                                         color="#FFF8D1"
                                     />
-                                    <p>bfIlovelife@gmail.com</p>
+                                    <a href="mailto:bfIlovelife@gmail.com">bfIlovelife@gmail.com</a>
                                     <span>e-mail</span>
                                 </div>
                             </Grid>

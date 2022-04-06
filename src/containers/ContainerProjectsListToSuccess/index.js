@@ -1,13 +1,13 @@
 import React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import { Link } from 'react-router-dom';
 
 import Title from '../../components/Title';
 import SubTitle from '../../components/SubTitle';
 import SuccessLinear from '../../components/SuccessLinear';
-import { useStyles } from './styles';
-import {Link} from 'react-router-dom';
 import LineBg from '../../components/LineBg';
+import { useStyles } from './styles';
 
 const ContainerProjectsListToSuccess = ({projectsList}) => {
     const classes = useStyles();
@@ -18,9 +18,6 @@ const ContainerProjectsListToSuccess = ({projectsList}) => {
             <Container maxWidth="md">
                 <Title
                     title="помогите нам собрать средства"
-                />
-                <SubTitle
-                    title={<>вы можете финансово помочь <br/> конкретным людям</>}
                 />
                 <Grid container spacing={4}>
                     {

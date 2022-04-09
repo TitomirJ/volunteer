@@ -6,6 +6,7 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
+import { pdfjs } from 'react-pdf';
 
 import Main from './pages/Main';
 import Projects from './pages/Projects';
@@ -17,6 +18,8 @@ import {
 } from './redux/projects';
 import Loader from './components/Loader';
 import Contacts from './pages/Contacts';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const App = (props) => {
     const {

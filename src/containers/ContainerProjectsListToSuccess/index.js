@@ -4,7 +4,6 @@ import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
 
 import Title from '../../components/Title';
-import SubTitle from '../../components/SubTitle';
 import SuccessLinear from '../../components/SuccessLinear';
 import LineBg from '../../components/LineBg';
 import { useStyles } from './styles';

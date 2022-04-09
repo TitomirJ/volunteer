@@ -6,6 +6,7 @@ import { NavHashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
+import Button from '../Button';
 import LogoImg from '../../assests/images/Logo.png';
 import LinkedInIcon from '../../assests/icons/LinkedInIcon';
 import PhoneIcon from '../../assests/icons/PhoneIcon';
@@ -14,10 +15,9 @@ import FacebookIcon from '../../assests/icons/FacebookIcon';
 import TelegramIcon from '../../assests/icons/TelegramIcon';
 import YoutubeIcon from '../../assests/icons/YoutubeIcon';
 import TwitterIcon from '../../assests/icons/TwitterIcon';
-import Button from '../Button';
+import CloseIcon from '../../assests/icons/CloseIcon';
 import MenuIcon from '../../assests/icons/MenuIcon';
 import { useStyles } from './styles';
-import CloseIcon from '../../assests/icons/CloseIcon';
 
 const InfoNav = () => {
     const classes = useStyles();
@@ -78,7 +78,6 @@ const InfoNav = () => {
                                         <a target="_blank"  href="https://t.me/nazustrichzhittyu">
                                             <TelegramIcon/>
                                         </a>
-                                        <YoutubeIcon/>
                                         <a target="_blank"  href="https://twitter.com/nazustrichzhit1">
                                             <TwitterIcon/>
                                         </a>
@@ -134,10 +133,6 @@ const InfoNav = () => {
                                                 height="30"
                                             />
                                         </a>
-                                        <YoutubeIcon
-                                            width="30"
-                                            height="30"
-                                        />
                                         <a target="_blank"  href="https://twitter.com/nazustrichzhit1">
                                             <TwitterIcon
                                                 width="30"

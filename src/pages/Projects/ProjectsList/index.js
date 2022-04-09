@@ -17,9 +17,12 @@ const ProjectsList = ({projectsList}) => {
                 <ContainerProjectsListToSuccess
                     projectsList={projectsList}
                 />
-                <WhichProjectsDone
-                    projectsList={projectsList}
-                />
+                {
+                    projectsList.filter(item => item.success === 100).length > 0 &&
+                        <WhichProjectsDone
+                            projectsList={projectsList}
+                        />
+                }
             </main>
             <Footer/>
         </>

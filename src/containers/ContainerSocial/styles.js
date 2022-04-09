@@ -12,7 +12,7 @@ export const useStyles = makeStyles({
         ["@media (max-width: 769px)"]: {
             display: 'grid',
             justifyContent: 'space-between',
-            gridTemplateColumns: 'repeat(4, auto)',
+            gridTemplateColumns: 'repeat(6, auto)',
             gridTemplateRows: 'repeat(1, auto)'
         }
     },

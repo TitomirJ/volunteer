@@ -1,5 +1,7 @@
 import React from 'react';
 import Container from '@mui/material/Container';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 import { Grid } from '@mui/material';
 
@@ -9,12 +11,9 @@ import PhoneIcon from '../../assests/icons/PhoneIcon';
 import InstagramIcon from '../../assests/icons/InstagramIcon';
 import FacebookIcon from '../../assests/icons/FacebookIcon';
 import TelegramIcon from '../../assests/icons/TelegramIcon';
-import YoutubeIcon from '../../assests/icons/YoutubeIcon';
 import TwitterIcon from '../../assests/icons/TwitterIcon';
 import LogoImg from '../../assests/images/Logo.png';
 import { useStyles } from './styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import {Link} from 'react-router-dom';
 
 const Footer = () => {
     const classes = useStyles();
@@ -84,7 +83,6 @@ const Footer = () => {
                             <a target="_blank"  href="https://t.me/nazustrichzhittyu">
                                 <TelegramIcon/>
                             </a>
-                            <YoutubeIcon/>
                             <a target="_blank"  href="https://twitter.com/nazustrichzhit1">
                                 <TwitterIcon/>
                             </a>

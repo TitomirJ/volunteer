@@ -65,15 +65,6 @@ const ContainerSocial = () => {
                     <p>telegram</p>
                 </a>
                 <div className={classes.line}> </div>
-                <div className={classes.socialIcon}>
-                    <YoutubeIcon
-                        width="37"
-                        height="37"
-                        color="#2E4E6C"
-                    />
-                    <p>youtube</p>
-                </div>
-                <div className={classes.line}> </div>
                 <a target="_blank"  href="https://twitter.com/nazustrichzhit1" className={classes.socialIcon}>
                     <TwitterIcon
                         width="37"

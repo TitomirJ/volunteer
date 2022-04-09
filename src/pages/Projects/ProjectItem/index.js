@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Container from '@mui/material/Container';
+import { Document, Page } from 'react-pdf';
 
 import InfoNav from '../../../components/InfoNav';
 import Footer from '../../../components/Footer';
@@ -10,6 +11,7 @@ import SuccessLinear from '../../../components/SuccessLinear';
 import Button from '../../../components/Button';
 
 import { useStyles } from './styles';
+import {storage} from '../../../config/firebase';
 
 const ProjectItem = (props) => {
     const [currentProject, setCurrentProject] = useState(null);
@@ -25,6 +27,7 @@ const ProjectItem = (props) => {
         }
     }, []);
 
+    console.log(storage.refFromURL('https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/Bradford%20st%20-%20Architectural.pdf'))
     return (
         <>
             {
@@ -61,21 +64,32 @@ const ProjectItem = (props) => {
                                         </div>
                                     </Container>
                                 </div>
-                                <div style={{position: 'relative', padding: '2px 0px 140px'}}>
-                                    <LineBg color="#FFFAE1"/>
-                                    <Container maxWidth="md">
-                                        <Title
-                                            title="отчет о сборе средств"
-                                        />
-                                        {
-                                            currentProject.files.map((item, index) => {
-                                                return (
-                                                    <iframe key={index} style={{marginTop: '100px', width: '100%', height: '600px'}} src={`https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`}> </iframe>
-                                                )
-                                            })
-                                        }
-                                    </Container>
-                                </div>
+                                {
+                                    currentProject.files && currentProject.files.length > 0 &&
+                                    <div style={{position: 'relative', padding: '2px 0px 140px'}}>
+                                        <LineBg color="#FFFAE1"/>
+                                        <Container maxWidth="md">
+                                            <Title
+                                                title="отчет о сборе средств"
+                                            />
+                                            {
+                                                currentProject.files.map((item, index) => {
+                                                    return (
+                                                        <Document
+                                                            key={index}
+                                                            file={{
+                                                                url: `https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`,
+                                                            }}
+                                                        >
+                                                            <Page pageNumber={1} />
+                                                        </Document>
+                                                        // <iframe key={index} style={{marginTop: '100px', width: '100%', height: '600px'}} src={`https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`}> </iframe>
+                                                    )
+                                                })
+                                            }
+                                        </Container>
+                                    </div>
+                                }
                             </main>
                             <Footer/>
                         </>

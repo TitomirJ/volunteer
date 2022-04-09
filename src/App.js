@@ -6,7 +6,7 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-import { pdfjs } from 'react-pdf';
+import { Worker } from '@react-pdf-viewer/core';
 
 import Main from './pages/Main';
 import Projects from './pages/Projects';
@@ -18,8 +18,6 @@ import {
 } from './redux/projects';
 import Loader from './components/Loader';
 import Contacts from './pages/Contacts';
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const App = (props) => {
     const {
@@ -35,7 +33,7 @@ const App = (props) => {
     }, [projectsList]);
 
     return (
-        <>
+        <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">
             {
                 !projectsLoading
                     ?
@@ -71,7 +69,7 @@ const App = (props) => {
                     :
                         <Loader/>
             }
-        </>
+        </Worker>
     );
 }
 

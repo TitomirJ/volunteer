@@ -24,5 +24,9 @@ export const useStyles = makeStyles({
     },
     button: {
         margin: '30px 0!important',
+    },
+    pdfContainer: {
+        height: '600px',
+        overflow: 'scroll'
     }
 });

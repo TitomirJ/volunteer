@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Container from '@mui/material/Container';
-import { Document, Page } from 'react-pdf';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+import { ProgressBar, Viewer } from '@react-pdf-viewer/core';
 
 import InfoNav from '../../../components/InfoNav';
 import Footer from '../../../components/Footer';
@@ -10,12 +11,14 @@ import Title from '../../../components/Title';
 import SuccessLinear from '../../../components/SuccessLinear';
 import Button from '../../../components/Button';
 
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import { useStyles } from './styles';
-import {storage} from '../../../config/firebase';
 
 const ProjectItem = (props) => {
-    const [currentProject, setCurrentProject] = useState(null);
     const classes = useStyles();
+    const [currentProject, setCurrentProject] = useState(null);
+    const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -27,7 +30,6 @@ const ProjectItem = (props) => {
         }
     }, []);
 
-    console.log(storage.refFromURL('https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/Bradford%20st%20-%20Architectural.pdf'))
     return (
         <>
             {
@@ -75,15 +77,28 @@ const ProjectItem = (props) => {
                                             {
                                                 currentProject.files.map((item, index) => {
                                                     return (
-                                                        <Document
-                                                            key={index}
-                                                            file={{
-                                                                url: `https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`,
-                                                            }}
-                                                        >
-                                                            <Page pageNumber={1} />
-                                                        </Document>
-                                                        // <iframe key={index} style={{marginTop: '100px', width: '100%', height: '600px'}} src={`https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`}> </iframe>
+                                                        <>
+                                                            <div
+                                                                key={index}
+                                                                style={{
+                                                                    border: '1px solid rgba(0, 0, 0, 0.3)',
+                                                                    height: '750px',
+                                                                    marginTop: '100px'
+                                                                }}
+                                                            >
+                                                                <Viewer
+                                                                    renderLoader={(percentages) => (
+                                                                        <div style={{ width: '240px' }}>
+                                                                            <ProgressBar progress={Math.round(percentages)} />
+                                                                        </div>
+                                                                    )}
+                                                                    plugins={[
+                                                                        defaultLayoutPluginInstance,
+                                                                    ]}
+                                                                    fileUrl={`https://cors-anywhere.herokuapp.com/https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`}
+                                                                />
+                                                            </div>
+                                                        </>
                                                     )
                                                 })
                                             }

@@ -77,28 +77,26 @@ const ProjectItem = (props) => {
                                             {
                                                 currentProject.files.map((item, index) => {
                                                     return (
-                                                        <>
-                                                            <div
-                                                                key={index}
-                                                                style={{
-                                                                    border: '1px solid rgba(0, 0, 0, 0.3)',
-                                                                    height: '750px',
-                                                                    marginTop: '100px'
-                                                                }}
-                                                            >
-                                                                <Viewer
-                                                                    renderLoader={(percentages) => (
-                                                                        <div style={{ width: '240px' }}>
-                                                                            <ProgressBar progress={Math.round(percentages)} />
-                                                                        </div>
-                                                                    )}
-                                                                    plugins={[
-                                                                        defaultLayoutPluginInstance,
-                                                                    ]}
-                                                                    fileUrl={`https://cors-anywhere.herokuapp.com/https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`}
-                                                                />
-                                                            </div>
-                                                        </>
+                                                        <div
+                                                            key={index}
+                                                            style={{
+                                                                border: '1px solid rgba(0, 0, 0, 0.3)',
+                                                                height: '750px',
+                                                                marginTop: '100px'
+                                                            }}
+                                                        >
+                                                            <Viewer
+                                                                renderLoader={(percentages) => (
+                                                                    <div style={{ width: '240px' }}>
+                                                                        <ProgressBar progress={Math.round(percentages)} />
+                                                                    </div>
+                                                                )}
+                                                                plugins={[
+                                                                    defaultLayoutPluginInstance,
+                                                                ]}
+                                                                fileUrl={`https://firebasestorage.googleapis.com/v0/b/volunteer-198f8.appspot.com/o/${item}`}
+                                                            />
+                                                        </div>
                                                     )
                                                 })
                                             }

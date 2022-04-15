@@ -78,13 +78,13 @@ const InfoNav = () => {
                 {/* <a href="tel:+380 (98) 157 68 90">
                   <PhoneIcon />
                 </a> */}
-                <a
+                {/* <a
                   target="_blank"
                   href="https://instagram.com/towardslife2.0"
                   rel="noreferrer"
                 >
                   <InstagramIcon />
-                </a>
+                </a> */}
                 <a
                   target="_blank"
                   href="https://www.facebook.com/bftowardslife"

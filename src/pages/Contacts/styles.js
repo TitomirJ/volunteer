@@ -50,7 +50,7 @@ export const useStyles = makeStyles({
     },
     requisites: {
         width: '100%',
-        height: '383.53px',
+        minHeight: '383.53px',
         background: 'rgba(25, 49, 81, 0.5)',
         marginTop: '60px',
         fontSize: '16px',
@@ -63,7 +63,12 @@ export const useStyles = makeStyles({
             alignItems: 'center',
 
             '& p': {
-                marginLeft: '10px'
+                marginLeft: '10px',
+                wordBreak: 'break-word',
+
+                ["@media (max-width: 769px)"]: {
+                    fontSize: '15px',
+                },
             }
         }
     }

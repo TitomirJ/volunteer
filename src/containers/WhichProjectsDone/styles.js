@@ -20,7 +20,7 @@ export const useStyles = makeStyles({
         minWidth: 'unset',
         textTransform: 'initial',
         fontSize: '16px!important',
-        padding: '17px 30px!important',
+        padding: '17px!important',
         textDecoration: 'none',
         background: 'transparent',
         color: '#0066FF!important',

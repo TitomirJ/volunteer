@@ -11,7 +11,11 @@ export const useStyles = makeStyles(() => ({
         alignItems: 'center',
         position: 'relative',
         backgroundAttachment: 'fixed',
-        flexDirection: 'column'
+        flexDirection: 'column',
+
+        ["@media (max-width: 769px)"]: {
+            backgroundAttachment: 'unset',
+        }
     },
     title: {
         fontWeight: 900,

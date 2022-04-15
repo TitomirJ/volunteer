@@ -1,32 +1,32 @@
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@mui/styles";
 
 export const useStyles = makeStyles({
-    social: {
-        display: 'flex',
-        justifyContent: 'space-between',
+  social: {
+    display: "flex",
+    justifyContent: "space-between",
 
-        '& svg': {
-            cursor: 'pointer'
-        },
+    "& svg": {
+      cursor: "pointer",
+    },
 
-        ["@media (max-width: 769px)"]: {
-            display: 'grid',
-            justifyContent: 'space-between',
-            gridTemplateColumns: 'repeat(6, auto)',
-            gridTemplateRows: 'repeat(1, auto)'
-        }
+    "@media (max-width: 769px)": {
+      display: "grid",
+      justifyContent: "space-between",
+      gridTemplateColumns: "repeat(5, auto)",
+      gridTemplateRows: "repeat(1, auto)",
     },
-    socialIcon: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        textTransform: 'uppercase',
-        color: '#2E4E6C',
-        textDecoration: 'none',
-    },
-    line: {
-        width: '2px',
-        height: '40px',
-        background: '#C9ECFF'
-    }
+  },
+  socialIcon: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textTransform: "uppercase",
+    color: "#2E4E6C",
+    textDecoration: "none",
+  },
+  line: {
+    width: "2px",
+    height: "40px",
+    background: "#C9ECFF",
+  },
 });

@@ -38,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
   socialIconsBlock: {
     width: "300px",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "center!important",
     gap: "30px",
 
     "& svg": {
@@ -90,7 +90,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "15px",
       flexDirection: "column",
       padding: "20px 0 26px 0",
-      textAlign: "center",
+      // textAlign: "center",
       width: "100%",
       borderBottom: "2px solid #FFFFFF",
       marginBottom: "26px",

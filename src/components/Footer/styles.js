@@ -16,6 +16,7 @@ export const useStyles = makeStyles({
     width: "300px",
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
     gap: "28px",
 
     "& svg": {

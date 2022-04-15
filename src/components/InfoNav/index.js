@@ -120,7 +120,7 @@ const InfoNav = () => {
                   <NavHashLink smooth to="/#howToHelp">
                     КАК ПОМОЧЬ
                   </NavHashLink>
-                  <Link to="/projects">ПРОЕКТЫ</Link>
+                  {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
                   <Link to="/contacts">КOНТАКТЫ</Link>
                 </div>
                 <div className={classes.socialIconsBlock}>
@@ -131,16 +131,16 @@ const InfoNav = () => {
                   >
                     <LinkedInIcon width="30" height="30" />
                   </a>
-                  <a href="tel:+380 (98) 157 68 90">
+                  {/* <a href="tel:+380 (98) 157 68 90">
                     <PhoneIcon width="30" height="30" />
-                  </a>
-                  <a
+                  </a> */}
+                  {/* <a
                     target="_blank"
                     href="https://instagram.com/towardslife2.0"
                     rel="noreferrer"
                   >
                     <InstagramIcon width="30" height="30" />
-                  </a>
+                  </a> */}
                   <a
                     target="_blank"
                     href="https://www.facebook.com/bftowardslife"
@@ -155,13 +155,13 @@ const InfoNav = () => {
                   >
                     <TelegramIcon width="30" height="30" />
                   </a>
-                  <a
+                  {/* <a
                     target="_blank"
                     href="https://twitter.com/nazustrichzhit1"
                     rel="noreferrer"
                   >
                     <TwitterIcon width="30" height="30" />
-                  </a>
+                  </a> */}
                 </div>
               </>
             )}

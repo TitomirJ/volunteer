@@ -1,7 +1,0 @@
-[
-  {
-    "origin": ["https://towardslife.com.ua", "http://localhost:3001"],
-    "method": ["GET"],
-    "maxAgeSeconds": 3600
-  }
-]

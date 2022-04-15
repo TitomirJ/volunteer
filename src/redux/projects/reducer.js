@@ -31,7 +31,7 @@ const projects = (state = initialState, action) => {
             return {
                 ...state,
                 loading: false,
-                data: null,
+                data: [],
                 error: action.payload
             };
         }

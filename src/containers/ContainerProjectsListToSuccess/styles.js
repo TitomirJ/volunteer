@@ -44,6 +44,10 @@ export const useStyles = makeStyles({
         fontSize: '16px',
         textTransform: 'uppercase',
         color: '#56555F',
-        textAlign: 'center'
+        textAlign: 'center',
+        display: '-webkit-box !important',
+        ['-webkit-line-clamp']: 3,
+        ['-webkit-box-orient']: 'vertical',
+        whiteSpace: 'normal'
     }
 });

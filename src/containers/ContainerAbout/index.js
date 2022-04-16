@@ -58,7 +58,7 @@ const ContainerAbout = () => {
           <Grid container justifyContent="center">
             <div className={classes.button}>
               {/* <Button to="/projects" variant="primary">НАШИ ПРОЕКТЫ</Button> */}
-              <Button variant="primary" disabled="true">
+              <Button variant="primary" disabled={true}>
                 НАШИ ПРОЕКТЫ
               </Button>
             </div>

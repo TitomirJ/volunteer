@@ -68,7 +68,7 @@ const Contacts = () => {
                         <ClockIcon/>
                         <p>пн - вс с 10:00 до 20:00</p>
                     </Container>
-                    <div style={{position: 'relative', padding: '2px 0 0'}}>
+                    <div id="requisites" style={{position: 'relative', padding: '2px 0 0'}}>
                         <Title title="наши реквизиты"/>
                         <LineBg color="#FFFAE1"/>
                         <Container className={classes.requisites} maxWidth="md">

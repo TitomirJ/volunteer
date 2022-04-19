@@ -17,9 +17,21 @@ import YoutubeIcon from "../../assests/icons/YoutubeIcon";
 import TwitterIcon from "../../assests/icons/TwitterIcon";
 import CloseIcon from "../../assests/icons/CloseIcon";
 import MenuIcon from "../../assests/icons/MenuIcon";
+
+import {
+  FormattedDate,
+  FormattedNumber,
+  FormattedPlural,
+  useIntl,
+  FormattedMessage,
+} from "react-intl";
+
 import { useStyles } from "./styles";
 
 const InfoNav = () => {
+  const intl = useIntl();
+  console.log("intl", intl);
+
   const classes = useStyles();
   const [menuOpened, setMenuOpened] = useState(false);
 
@@ -179,17 +191,31 @@ const InfoNav = () => {
               {matches && (
                 <div className={classes.menu}>
                   <NavHashLink smooth to="/#aboutUs">
-                    КТО МЫ
+                    <FormattedMessage
+                      id="navbar.whoAreWe"
+                      // defaultMessage="КТО МЫ"
+                    />
                   </NavHashLink>
                   <NavHashLink smooth to="/#howToHelp">
-                    КАК ПОМОЧЬ
+                    <FormattedMessage
+                      id="navbar.howToHelp"
+                      // defaultMessage="КТО МЫ"
+                    />
                   </NavHashLink>
                   {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
-                  <Link to="/contacts">КOНТАКТЫ</Link>
+                  <Link to="/contacts">
+                    <FormattedMessage
+                      id="navbar.contacts"
+                      // defaultMessage="КТО МЫ"
+                    />
+                  </Link>
                 </div>
               )}
               <Button variant="outline" width={matches ? "270px" : "130px"}>
-                ПОЖЕРТВОВАТЬ
+                <FormattedMessage
+                  id="navbar.pay"
+                  // defaultMessage="КТО МЫ"
+                />
               </Button>
             </Container>
           </Toolbar>

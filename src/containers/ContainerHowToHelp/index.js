@@ -14,7 +14,7 @@ const ContainerHowToHelp = () => {
 
   function createOrder(amount, order_desc) {
     var button = window?.$ipsp.get("button");
-    button.setMerchantId(1396424);
+    button.setMerchantId(1503310);
     button.setAmount(amount, "USD");
     button.setResponseUrl("http://example.com/result/");
     button.setHost("pay.fondy.eu");

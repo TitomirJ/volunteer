@@ -18,6 +18,8 @@ import TwitterIcon from "../../assests/icons/TwitterIcon";
 import CloseIcon from "../../assests/icons/CloseIcon";
 import MenuIcon from "../../assests/icons/MenuIcon";
 
+import LangSwitcher from "../LangSwitcher/LangSwitcher";
+
 import {
   FormattedDate,
   FormattedNumber,
@@ -62,6 +64,7 @@ const InfoNav = () => {
           >
             {!menuOpened && (
               <>
+                <LangSwitcher />
                 <a
                   href="tel:+380 (98) 157 68 90"
                   className={classes.linksToContact}
@@ -127,13 +130,24 @@ const InfoNav = () => {
               <>
                 <div className={classes.menu}>
                   <NavHashLink smooth to="/#aboutUs">
-                    КТО МЫ
+                    <FormattedMessage
+                      id="navbar.whoAreWe"
+                      // defaultMessage="КТО МЫ"
+                    />
                   </NavHashLink>
                   <NavHashLink smooth to="/#howToHelp">
-                    КАК ПОМОЧЬ
+                    <FormattedMessage
+                      id="navbar.howToHelp"
+                      // defaultMessage="КТО МЫ"
+                    />
                   </NavHashLink>
                   {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
-                  <Link to="/contacts">КOНТАКТЫ</Link>
+                  <Link to="/contacts">
+                    <FormattedMessage
+                      id="navbar.contacts"
+                      // defaultMessage="КТО МЫ"
+                    />
+                  </Link>
                 </div>
                 <div className={classes.socialIconsBlock}>
                   <a

@@ -10,18 +10,18 @@ import TeamMemberFour from "../../assests/images/photo_2022-03-28_13-48-01.jpg";
 import Button from "../../components/Button";
 import LineBg from "../../components/LineBg";
 import CustomizedDialogs from "../../components/Modal/Modal";
+
+import { FormattedMessage } from "react-intl";
+
 import { useStyles } from "./styles";
 
 const ContainerOurTeam = () => {
   const classes = useStyles();
 
   const [open, setOpen] = React.useState(false);
-  console.log("🚀 ~ file: index.js ~ line 19 ~ ContainerOurTeam ~ open", open);
-  const [person, setPerson] = React.useState("");
-  console.log(
-    "🚀 ~ file: index.js ~ line 21 ~ ContainerOurTeam ~ person",
-    person
-  );
+
+  const [title, setTitle] = React.useState("");
+  const [body, setBody] = React.useState("");
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -32,13 +32,18 @@ const ContainerOurTeam = () => {
 
   return (
     <div style={{ position: "relative", padding: "2px 0" }}>
-      <CustomizedDialogs title={person} handleClose={handleClose} open={open} />
+      <CustomizedDialogs
+        title={title}
+        body={body}
+        handleClose={handleClose}
+        open={open}
+      />
       <LineBg color="#FFFAE1" />
       <Container
         maxWidth="md"
         style={{ marginTop: "57px", marginBottom: "140px" }}
       >
-        <Title title="наша команда" />
+        <Title title={<FormattedMessage id="ourTeam.title" />} />
         <Grid container spacing={4} style={{ marginTop: "60px" }}>
           <Grid
             container
@@ -56,10 +61,13 @@ const ContainerOurTeam = () => {
             <Button
               variant="outlinePrimary"
               onClick={() => (
-                handleClickOpen(), setPerson("Евгений Самойленко")
+                handleClickOpen(),
+                setTitle(<FormattedMessage id="fullName1" />),
+                setBody(<FormattedMessage id="roles.person1" />)
               )}
             >
-              евгений <br /> самойленко
+              <FormattedMessage id="name1" /> <br />{" "}
+              <FormattedMessage id="surname1" />
             </Button>
           </Grid>
           <Grid
@@ -77,9 +85,14 @@ const ContainerOurTeam = () => {
             />
             <Button
               variant="outlinePrimary"
-              onClick={() => (handleClickOpen(), setPerson("Дарья Игнатьева"))}
+              onClick={() => (
+                handleClickOpen(),
+                setTitle(<FormattedMessage id="fullName2" />),
+                setBody(<FormattedMessage id="roles.person2" />)
+              )}
             >
-              дарья <br /> игнатьева
+              <FormattedMessage id="name2" /> <br />{" "}
+              <FormattedMessage id="surname2" />
             </Button>
           </Grid>
           <Grid
@@ -98,10 +111,13 @@ const ContainerOurTeam = () => {
             <Button
               variant="outlinePrimary"
               onClick={() => (
-                handleClickOpen(), setPerson("Владислав Шевченко")
+                handleClickOpen(),
+                setTitle(<FormattedMessage id="fullName3" />),
+                setBody(<FormattedMessage id="roles.person3" />)
               )}
             >
-              владислав <br /> шевченко
+              <FormattedMessage id="name3" /> <br />{" "}
+              <FormattedMessage id="surname3" />
             </Button>
           </Grid>
           <Grid
@@ -119,9 +135,14 @@ const ContainerOurTeam = () => {
             />
             <Button
               variant="outlinePrimary"
-              onClick={() => (handleClickOpen(), setPerson("Юлианна Кушнир"))}
+              onClick={() => (
+                handleClickOpen(),
+                setTitle(<FormattedMessage id="fullName4" />),
+                setBody(<FormattedMessage id="roles.person4" />)
+              )}
             >
-              юлианна <br /> кушнир
+              <FormattedMessage id="name4" /> <br />{" "}
+              <FormattedMessage id="surname4" />
             </Button>
           </Grid>
         </Grid>

@@ -1,105 +1,112 @@
 {
-  "navbar": {
-    "whoAreWe": "WHO WE ARE",
-    "howToHelp": "HOW TO HELP",
-    "contacts": "CONTACTS",
-    "pay": "DONATE"
-  },
+  "navbar.whoAreWe": "WHO WE ARE",
+  "navbar.howToHelp": "HOW TO HELP",
+  "navbar.contacts": "CONTACTS",
+  "navbar.pay": "DONATE",
 
-  "firstBlock": {
-    "bigTitle": "WE HELP EVERY DAY",
+  "firstBlock.bigTitle1": "every day",
+  "firstBlock.bigTitle2": "we help",
 
-    "underBigTitleCityAndNeeds": {
-      "city": {
-        "Kv": "Kyiv",
-        "Zp": "Zaporozhye"
-      },
-      "needsKv": "THE DEFENSE, EVACUATION, PENSIONERS",
-      "needsZp": "THE DEFENSE, EVACUATION, WOUNDED",
-      "help": "Help"
-    }
-  },
+  "Kv": "Kyiv",
+  "Zp": "Zaporozhye",
+  "needsKv1": "therodefense",
+  "needsKv2": "evacuation",
+  "needsKv3": "pensioners",
 
-  "secondBlock": {
-    "fondName": "CF Nazustrich life",
-    "title1": "The foundation was founded on April 22, 2015 by a group",
-    "title2": "ZNTU students",
-    "text1": "At the time of creation, we had 2 directions with several successful projects:",
-    "text3": "1.Ecology",
-    "text4": "2. Help children",
-    "text5": "Due to too young staff and lack of experience, the foundation had to be stopped.",
-    "text6": "In 2022",
-    "text7": "Russia invaded Ukraine",
-    "text8": "And everyone who was previously in the foundation started",
-    "text9": "volunteer",
-    "text10": "anyone can help our defenders and injured civilians.",
-    "text11": "On this basis, foundation",
-    "text12": "restored",
-    "text13": "own",
-    "text14": "work",
-    "text15": "to help more people.",
-    "text16": "Together we are strong.",
-    "ourProjects": "OUR PROJECTS"
-  },
+  "needsZp1": "therodefense",
+  "needsZp2": "evacuation",
+  "needsZp3": "therodefense",
 
-  "containerSocials": {
-    "title": ["more info on our", "social media:"]
-  },
+  "help": "Help",
 
-  "ourTeam": {
-    "title": "our team",
-    "name": ["evgeniy", "daria", "vladislav", "yulianna"],
-    "surname": ["samoilenko", "ignatiev", "shevchenko", "kushnir"]
-  },
+  "fondTitle": "CF „Назустріч життю“",
+  "titleDescription1": "works in healthcare",
+  "titleDescription2": "and social security",
 
-  "roles": {
-    "person1": "NFT Fundraising Project Coordinator - NFT Kids Ukraine",
-    "person2": "Head of the Kiev branch of the charitable foundation",
-    "person3": "Head of a charitable foundation",
-    "person4": "Charity Fund Marketer"
-  },
+  "secondBlock.title1": "The foundation was founded on April 22, 2015 by a group",
+  "secondBlock.title2": "ZNTU students",
 
-  "howToHelp": [
-    "how to help",
-    "financial support",
-    "Transfer funds for Procurement, for the needs of the Ukrainian army",
-    "DONATE",
-    "OUR DETAILS",
-    "The Ukrainian Army needs the following",
-    "Body Armor",
-    "Unloading",
-    "Radio",
-    "Helmets",
-    "Knee Pads",
-    "Tactical",
-    "thermal imagers",
-    "Drones",
-    "HELP",
-    "become",
-    "volunteer",
-    "Becoming a Volunteer is easy. Help Ukraine with what you can do best, join our team for a common goal! Together to win!"
-  ],
+  "secondBlock.text1": "At the time of creation, we had 2 directions with several successful projects:",
+  "secondBlock.text2": "1.Ecology",
+  "secondBlock.text3": "2.Help children",
+  "secondBlock.text4": "Due to too young staff and lack of experience, the foundation had to be stopped.",
+  "secondBlock.text5": "In 2022",
+  "secondBlock.text6": "Russia invaded Ukraine",
+  "secondBlock.text7": "And everyone who was previously in the foundation started",
+  "secondBlock.text8": "volunteer",
+  "secondBlock.text9": ": help our defenders and injured civilians in any way they can.",
+  "secondBlock.text10": "On this ground, foundation",
+  "secondBlock.text11": "restored",
+  "secondBlock.text12": "your",
+  "secondBlock.text13": "work",
+  "secondBlock.text14": "to help more people.",
+  "secondBlock.text15": "Together we are strong.",
+  "secondBlock.ourProjects": "OUR PROJECTS",
 
-  "contactInfo": {
-    "title": "contact information",
-    "schedule": "Mon - Sun from 10:00 to 20:00",
-    "payment": [
-      "details for making a payment within Ukraine:",
-      "IBAN UA423133990000026001000203348",
-      "Assigned to payment: help to the army",
-      "Card Monobank 4035200040167576 (Shevchenko Vladislav)",
-      "Card Privat Bank",
-      "5168745020475957 (Shevchenko Vladislav)",
-      "details for making a payment outside Ukraine:",
-      "For USD",
-      "IBAN UA783133990000026002030202244",
-      "Bank SWIFT Code - PBANUA2X",
-      "Recipient: CO Towards Life",
-      "Description: donation for army",
-      "Crypto",
-      "BTC: 1NLT946RhSmhj3PdvfDUaJVbjXBMZuycLG",
-      "ETH: 0x913f53d1216f7c6bca584a95b87f2a6d0d926bea",
-      "USDT (Tron): TD7YW1FwUf5CRrQi792ihC54hj7zhavSvg"
-    ]
-  }
+  "containerSocials.title1": "more information in ours",
+  "containerSocials.title2": "social networks:",
+
+  "ourTeam.title": "our team",
+  "name1": "eugene",
+  "name2": "daria",
+  "name3": "vladislav",
+  "name4": "yulian",
+
+  "surname1": "samoilenko",
+  "surname2": "ignatieva",
+  "surname3": "shevchenko",
+  "surname4": "kushnir",
+
+  "fullName1": "Eugene Samoilenko",
+  "fullName2": "Daria Ignatieva",
+  "fullName3": "Vladislav Shevchenko",
+  "fullName4": "Yulianna Kushnir",
+
+  "roles.person1": "NFT Fundraising Project Coordinator - NFT Kids Ukraine",
+  "roles.person2": "Head of the Kiev branch of the charitable foundation",
+  "roles.person3": "Charity Foundation Manager",
+  "roles.person4": "Charity Fund Marketer",
+
+  "howToHelp": "how to help",
+  "howToHelp1": "financial support",
+  "howToHelp2": "Transfer funds for Procurement, for the needs of the Ukrainian army",
+  "howToHelp3": "DONATE",
+  "howToHelp4": "OUR DETAILS",
+  "howToHelp5": "Ukrainian Army needs the following",
+  "howToHelp6": "Body Armor",
+  "howToHelp7": "Unload",
+  "howToHelp8": "Radios",
+  "howToHelp9": "Helmets",
+  "howToHelp10": "Knee Pads",
+  "howToHelp11": "Tactical",
+  "howToHelp12": "Thermal Imagers",
+  "howToHelp13": "Drones",
+  "howToHelp14": "HELP",
+  "howToHelp15": "become",
+  "howToHelp16": "volunteer",
+  "howToHelp17": "”Becoming a Volunteer” is easy. Help Ukraine with what you can do best, join our team for a common goal! Together to victory!",
+  "howToHelp18": "JOIN",
+
+  "contactInfo.title": "contact info",
+  "phone": "phone",
+  "schedule": "work schedule",
+  "schedule.time": "Mon - Sun from 10:00 to 20:00",
+  "requisites": "our requisites",
+
+  "payment": "details for making a payment within Ukraine:",
+  "payment1": "IBAN UA423133990000026001000203348",
+  "payment2": "Assigned to payment: help army",
+  "payment3": "Card Monobank 4035200040167576 (Shevchenko Vladislav)",
+  "payment4": "Privat Bank Card",
+  "payment5": "5168745020475957 (Shevchenko Vladislav)",
+  "payment6": "details for making a payment outside Ukraine:",
+  "payment7": "ForUSD",
+  "payment8": "IBAN UA783133990000026002030202244",
+  "payment9": "Bank SWIFT Code - PBANUA2X",
+  "payment10": "Recipient: CO Towards Life",
+  "payment11": "Description: donation for army",
+  "payment12": "Crypto",
+  "payment13": "BTC: 1NLT946RhSmhj3PdvfDUaJVbjXBMZuycLG",
+  "payment14": "ETH: 0x913f53d1216f7c6bca584a95b87f2a6d0d926bea",
+  "payment15": "USDT (Tron): TD7YW1FwUf5CRrQi792ihC54hj7zhavSvg"
 }

@@ -1,40 +1,73 @@
-import React from 'react';
-import HeaderBg from '../../assests/images/HeaderBg.png';
-import { useStyles } from './styles';
-import Button from '../../components/Button';
+import React from "react";
+import HeaderBg from "../../assests/images/HeaderBg.png";
+import Button from "../../components/Button";
+
+import { FormattedMessage } from "react-intl";
+
+import { useStyles } from "./styles";
 
 const Header = () => {
-    const classes = useStyles();
+  const classes = useStyles();
 
-    return (
-        <div id="header" className={classes.header} style={{backgroundImage: `url(${HeaderBg})`}}>
-            <h1 className={classes.title}>каждый день <br/> <span>мы помогаем</span></h1>
-            <div className={classes.blocksWrapper}>
-                <div className={classes.block}>
-                    <h2>киев</h2>
-                    <ul>
-                        <li>тероборона</li>
-                        <li>эвакуация</li>
-                        <li>пенсионеры</li>
-                    </ul>
-                    <div className={classes.blockButton}>
-                        <Button variant="yellowPrimary">ПОМОЧЬ</Button>
-                    </div>
-                </div>
-                <div className={classes.block}>
-                    <h2>запорожье</h2>
-                    <ul>
-                        <li>тероборона</li>
-                        <li>эвакуация</li>
-                        <li>раненые</li>
-                    </ul>
-                    <div className={classes.blockButton}>
-                        <Button variant="primary">ПОМОЧЬ</Button>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div
+      id="header"
+      className={classes.header}
+      style={{ backgroundImage: `url(${HeaderBg})` }}
+    >
+      <h1 className={classes.title}>
+        <FormattedMessage id="firstBlock.bigTitle1" />
+        <br />
+        <span>
+          <FormattedMessage id="firstBlock.bigTitle2" />
+        </span>
+      </h1>
+      <div className={classes.blocksWrapper}>
+        <div className={classes.block}>
+          <h2>
+            <FormattedMessage id="Kv" />
+          </h2>
+          <ul>
+            <li>
+              <FormattedMessage id="needsKv1" />
+            </li>
+            <li>
+              <FormattedMessage id="needsKv2" />
+            </li>
+            <li>
+              <FormattedMessage id="needsKv3" />
+            </li>
+          </ul>
+          <div className={classes.blockButton}>
+            <Button variant="yellowPrimary">
+              <FormattedMessage id="help" />
+            </Button>
+          </div>
         </div>
-    )
+        <div className={classes.block}>
+          <h2>
+            <FormattedMessage id="Zp" />
+          </h2>
+          <ul>
+            <li>
+              <FormattedMessage id="needsZp1" />
+            </li>
+            <li>
+              <FormattedMessage id="needsZp2" />
+            </li>
+            <li>
+              <FormattedMessage id="needsZp3" />
+            </li>
+          </ul>
+          <div className={classes.blockButton}>
+            <Button variant="primary">
+              <FormattedMessage id="help" />
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Header;

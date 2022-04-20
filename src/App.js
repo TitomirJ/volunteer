@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Worker } from "@react-pdf-viewer/core";
 import { IntlProvider } from "react-intl";
 
+import AppContext from "./context/AppContext";
+
 import en from "./translations/ENG.json";
 import uk from "./translations/UA.json";
 import ru from "./translations/RU.json";
@@ -29,32 +31,33 @@ const App = (props) => {
     }
   }, [projectsList]);
 
-  const AppContext = React.createContext();
+  // const AppContext = React.createContext();
+
   const [lang, setLang] = React.useState("ru");
+
   const [messages, setMessages] = React.useState(ru);
 
-  useEffect(() => {
-    if (lang === "ru") {
+  const switchLang = (value) => {
+    setLang(value);
+    if (value === "ru") {
       setMessages(ru);
     }
-    if (lang === "uk") {
+    if (value === "uk") {
       setMessages(uk);
     }
-    if (lang === "en") {
+    if (value === "en") {
       setMessages(en);
     }
-  }, [lang]);
-
-  let value = {
-    state: {
-      lang: lang,
-      switchLang: (value) => setLang(value),
-    },
   };
 
   return (
-    <AppContext.Provider value={value}>
-      <IntlProvider messages={messages} locale={lang} defaultLocale="ru">
+    <AppContext.Provider value={{ lang, switchLang }}>
+      <IntlProvider
+        messages={messages}
+        locale={lang}
+        defaultLocale={lang}
+        key={lang}
+      >
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">
           {!projectsLoading ? (
             <Router>

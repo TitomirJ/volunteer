@@ -1,12 +1,14 @@
 import React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import { useStyles } from "./styles";
+import { FormattedMessage } from "react-intl";
 
 import Button from "../../components/Button";
 import Title from "../../components/Title";
 import SubTitle from "../../components/SubTitle";
 import LineBg from "../../components/LineBg";
+
+import { useStyles } from "./styles";
 
 const ContainerAbout = () => {
   const classes = useStyles();
@@ -15,51 +17,73 @@ const ContainerAbout = () => {
     <div id="aboutUs" className={classes.wrapper}>
       <LineBg color="#EBF8FF" />
       <Container maxWidth="md">
-        <Title title="БФ „Назустріч життю“" />
+        <Title title={<FormattedMessage id="fondTitle" />} />
         <SubTitle
           title={
             <>
-              работает в сфере охраны здоровья <br /> и социальной защиты
+              <FormattedMessage id="titleDescription1" /> <br />
+              <FormattedMessage id="titleDescription2" />
             </>
           }
         />
         <Grid container>
           <Grid item xs={12} md={6}>
-            Фонд основан 22 апреля 2015 года группой <span>студентов ЗНТУ</span>
+            <FormattedMessage id="secondBlock.title1" />{" "}
+            <span>
+              <FormattedMessage id="secondBlock.title2" />
+            </span>
             .
             <br />
             <br />
-            На момент создания у нас было 2 направления с несколькими успешными
-            проектами:
+            <FormattedMessage id="secondBlock.text1" />
             <br />
             <br />
-            <span>1.Экология</span>
+            <span>
+              <FormattedMessage id="secondBlock.text2" />
+            </span>
             <br />
-            <span>2.Помощь детям</span>
+            <span>
+              <FormattedMessage id="secondBlock.text3" />
+            </span>
             <br />
             <br />
-            Из-за слишком молодого состава и отсутствия опыта, работу фонда
-            пришлось остановить.
+            <FormattedMessage id="secondBlock.text4" />
           </Grid>
           <Grid item xs={12} md={6}>
-            В 2022 году <span>Россия вторглась в Украину</span>. И все, кто
-            ранее был в фонде, начали <span>волонтерить</span>: помогать кто чем
-            может нашим защитникам и пострадавшим мирным жителям.
+            <FormattedMessage id="secondBlock.text5" />{" "}
+            <span>
+              <FormattedMessage id="secondBlock.text6" />
+            </span>
+            . <FormattedMessage id="secondBlock.text7" />{" "}
+            <span>
+              <FormattedMessage id="secondBlock.text8" />
+            </span>
+            <FormattedMessage id="secondBlock.text9" />
             <br />
             <br />
-            На этой почве, фонд <span>восстановил</span> свою{" "}
-            <span>работу</span> дабы помочь большему количеству людей.
+            <FormattedMessage id="secondBlock.text10" />{" "}
+            <span>
+              <FormattedMessage id="secondBlock.text11" />
+            </span>{" "}
+            <FormattedMessage id="secondBlock.text12" />{" "}
+            <span>
+              <FormattedMessage id="secondBlock.text13" />
+            </span>{" "}
+            <FormattedMessage id="secondBlock.text14" />
             <br />
             <br />
             <br />
             <br />
-            <span>Вместе мы сила</span> 💪 🇺🇦
+            <span>
+              <FormattedMessage id="secondBlock.text15" />
+            </span>{" "}
+            💪 🇺🇦
           </Grid>
           <Grid container justifyContent="center">
             <div className={classes.button}>
               {/* <Button to="/projects" variant="primary">НАШИ ПРОЕКТЫ</Button> */}
               <Button variant="primary" disabled={true}>
-                НАШИ ПРОЕКТЫ
+                <FormattedMessage id="secondBlock.ourProjects" />
               </Button>
             </div>
           </Grid>

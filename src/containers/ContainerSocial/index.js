@@ -9,6 +9,9 @@ import FacebookIcon from "../../assests/icons/FacebookIcon";
 import TelegramIcon from "../../assests/icons/TelegramIcon";
 import YoutubeIcon from "../../assests/icons/YoutubeIcon";
 import TwitterIcon from "../../assests/icons/TwitterIcon";
+
+import { FormattedMessage } from "react-intl";
+
 import { useStyles } from "./styles";
 
 const ContainerSocial = () => {
@@ -19,7 +22,8 @@ const ContainerSocial = () => {
       <SubTitle
         title={
           <>
-            больше информации в наших <br /> социальных сетях:
+            <FormattedMessage id="containerSocials.title1" /> <br />{" "}
+            <FormattedMessage id="containerSocials.title2" />
           </>
         }
       />

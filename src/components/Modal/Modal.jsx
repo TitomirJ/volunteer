@@ -10,6 +10,8 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 
+import { FormattedMessage } from "react-intl";
+
 export const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -50,21 +52,20 @@ BootstrapDialogTitle.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-export default function CustomizedDialogs({ title, handleClose, open }) {
-  let body;
-  if (title === "Евгений Самойленко") {
-    body =
-      "Координатор проекта по сбору средств на NFT платформах - NFT Kids Ukraine";
-  }
-  if (title === "Дарья Игнатьева") {
-    body = "Руководитель Киевского отделения благотворительного фонда";
-  }
-  if (title === "Владислав Шевченко") {
-    body = "Руководитель благотворительного фонда";
-  }
-  if (title === "Юлианна Кушнир") {
-    body = "Маркетолог благотворительного фонда";
-  }
+export default function CustomizedDialogs({ title, body, handleClose, open }) {
+  // let body;
+  // if (title === <FormattedMessage id="fullName1" />) {
+  //   body = <FormattedMessage id="roles.person1" />;
+  // }
+  // if (title === <FormattedMessage id="fullName2" />) {
+  //   body = <FormattedMessage id="roles.person2" />;
+  // }
+  // if (title === <FormattedMessage id="fullName3" />) {
+  //   body = <FormattedMessage id="roles.person3" />;
+  // }
+  // if (title === <FormattedMessage id="fullName4" />) {
+  //   body = <FormattedMessage id="roles.person4" />;
+  // }
 
   return (
     <div>

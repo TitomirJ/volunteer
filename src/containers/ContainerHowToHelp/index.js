@@ -7,6 +7,8 @@ import Title from "../../components/Title";
 import Button from "../../components/Button";
 import CardIcon from "../../assests/icons/CardIcon";
 import LineBg from "../../components/LineBg";
+import { FormattedMessage } from "react-intl";
+
 import { useStyles } from "./styles";
 
 const ContainerHowToHelp = () => {
@@ -30,13 +32,15 @@ const ContainerHowToHelp = () => {
     <div id="howToHelp" className={classes.container}>
       <LineBg color="rgb(255 242 175)" />
       <Container maxWidth="md">
-        <Title title="как помочь" />
+        <Title title={<FormattedMessage id="howToHelp" />} />
         <Grid container spacing={4} style={{ marginTop: "60px" }}>
           <Grid item xs={12} md={4}>
             <div className={classes.block}>
-              <h4>финансовая поддержка</h4>
+              <h4>
+                <FormattedMessage id="howToHelp1" />
+              </h4>
               <p style={{ marginBottom: "20px" }}>
-                Перевести средства на Закупки, для нужд Украинской армии
+                <FormattedMessage id="howToHelp2" />
               </p>
               <a
                 style={{ textDecoration: "none" }}
@@ -44,7 +48,9 @@ const ContainerHowToHelp = () => {
                 rel="noreferrer"
                 href={createOrder("", "ПОЖЕРТВОВАТЬ")}
               >
-                <Button variant="primary">ПОЖЕРТВОВАТЬ</Button>
+                <Button variant="primary">
+                  <FormattedMessage id="howToHelp3" />
+                </Button>
               </a>
 
               {/* <Button to="/projects" style={{margin: "33px 0"}} variant="outline">помогите нам собрать средства на...</Button> */}
@@ -61,7 +67,7 @@ const ContainerHowToHelp = () => {
                   to="/contacts/#requisites"
                 >
                   <p style={{ fontWeight: 700, marginLeft: "16px" }}>
-                    НАШИ РЕКВИЗИТЫ
+                    <FormattedMessage id="howToHelp4" />
                   </p>
                 </NavHashLink>
               </Grid>
@@ -69,36 +75,55 @@ const ContainerHowToHelp = () => {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.block}>
-              <h4>Украинская Армия нуждается в следующем</h4>
+              <h4>
+                <FormattedMessage id="howToHelp5" />
+              </h4>
               <ul>
-                <li>Бронежилеты</li>
-                <li>Разгрузки</li>
-                <li>Рации</li>
-                <li>Каски</li>
-                <li>Наколенники</li>
-                <li>Тактические перчатки,очки,обувь</li>
-                <li>Тепловизеры</li>
-                <li>Дроны</li>
+                <li>
+                  <FormattedMessage id="howToHelp6" />
+                </li>
+                <li>
+                  <FormattedMessage id="howToHelp7" />
+                </li>
+                <li>
+                  <FormattedMessage id="howToHelp8" />
+                </li>
+                <li>
+                  <FormattedMessage id="howToHelp9" />
+                </li>
+                <li>
+                  <FormattedMessage id="howToHelp10" />
+                </li>
+                <li>
+                  <FormattedMessage id="howToHelp11" />
+                </li>
+                <li>
+                  <FormattedMessage id="howToHelp12" />
+                </li>
+                <li>
+                  <FormattedMessage id="howToHelp13" />
+                </li>
               </ul>
               <NavHashLink
                 style={{ color: "white", textDecoration: "none" }}
                 smooth
                 to="/contacts/#requisites"
               >
-                <Button variant="yellowPrimary">ПОМОЧЬ</Button>
+                <Button variant="yellowPrimary">
+                  <FormattedMessage id="howToHelp14" />
+                </Button>
               </NavHashLink>
             </div>
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.block}>
               <h4>
-                стать <br /> волонтером
+                <FormattedMessage id="howToHelp15" /> <br />{" "}
+                <FormattedMessage id="howToHelp16" />
               </h4>
               <ul>
                 <span>
-                  “Стать Волонтером” - это просто. Помогай Украине тем, что
-                  умеешь делать лучше всего, присоединяйся к нашей команде ради
-                  общей цели! Вместе к победе!{" "}
+                  <FormattedMessage id="howToHelp17" />{" "}
                 </span>
                 {/*<span>помощь нужна</span> самая разная. все зависит от вашего{" "}*/}
                 {/*<span>желания</span> и свободного <span>времени</span>:*/}
@@ -117,7 +142,9 @@ const ContainerHowToHelp = () => {
                 smooth
                 to="/contacts"
               >
-                <Button variant="primary">ПРИСОЕДИНИТЬСЯ</Button>
+                <Button variant="primary">
+                  <FormattedMessage id="howToHelp18" />
+                </Button>
               </NavHashLink>
             </div>
           </Grid>

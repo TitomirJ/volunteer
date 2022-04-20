@@ -13,6 +13,9 @@ import FacebookIcon from "../../assests/icons/FacebookIcon";
 import TelegramIcon from "../../assests/icons/TelegramIcon";
 import TwitterIcon from "../../assests/icons/TwitterIcon";
 import LogoImg from "../../assests/images/Logo.png";
+
+import { FormattedMessage } from "react-intl";
+
 import { useStyles } from "./styles";
 
 const Footer = () => {
@@ -30,13 +33,15 @@ const Footer = () => {
           {matches && (
             <div className={classes.menu}>
               <NavHashLink smooth to="/#aboutUs">
-                КТО МЫ
+                <FormattedMessage id="navbar.whoAreWe" />
               </NavHashLink>
               <NavHashLink smooth to="/#howToHelp">
-                КАК ПОМОЧЬ
+                <FormattedMessage id="navbar.howToHelp" />
               </NavHashLink>
               {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
-              <Link to="/contacts">КOНТАКТЫ</Link>
+              <Link to="/contacts">
+                <FormattedMessage id="navbar.contacts" />
+              </Link>
             </div>
           )}
           <Button
@@ -44,7 +49,7 @@ const Footer = () => {
             fontSize={!matches && "10px"}
             width={matches ? "270px" : "130px"}
           >
-            ПОЖЕРТВОВАТЬ
+            <FormattedMessage id="navbar.pay" />
           </Button>
         </Grid>
         <Grid

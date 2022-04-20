@@ -30,8 +30,6 @@ const dropdownStyles = makeStyles({
 
 const LangSwitcher = () => {
   const ddnSt = dropdownStyles();
-  //   const [item, setItem] = useState("ru");
-  const [flag, setFlag] = useState();
 
   const { lang, switchLang } = useContext(AppContext);
 

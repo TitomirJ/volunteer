@@ -130,10 +130,7 @@ const InfoNav = () => {
               <>
                 <div className={classes.menu}>
                   <NavHashLink smooth to="/#aboutUs">
-                    <FormattedMessage
-                      id="navbar.whoAreWe"
-                      // defaultMessage="КТО МЫ"
-                    />
+                    <FormattedMessage id="navbar.whoAreWe" />
                   </NavHashLink>
                   <NavHashLink smooth to="/#howToHelp">
                     <FormattedMessage
@@ -143,10 +140,7 @@ const InfoNav = () => {
                   </NavHashLink>
                   {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
                   <Link to="/contacts">
-                    <FormattedMessage
-                      id="navbar.contacts"
-                      // defaultMessage="КТО МЫ"
-                    />
+                    <FormattedMessage id="navbar.contacts" />
                   </Link>
                 </div>
                 <div className={classes.socialIconsBlock}>
@@ -205,16 +199,10 @@ const InfoNav = () => {
               {matches && (
                 <div className={classes.menu}>
                   <NavHashLink smooth to="/#aboutUs">
-                    <FormattedMessage
-                      id="navbar.whoAreWe"
-                      // defaultMessage="КТО МЫ"
-                    />
+                    <FormattedMessage id="navbar.whoAreWe" />
                   </NavHashLink>
                   <NavHashLink smooth to="/#howToHelp">
-                    <FormattedMessage
-                      id="navbar.howToHelp"
-                      // defaultMessage="КТО МЫ"
-                    />
+                    <FormattedMessage id="navbar.howToHelp" />
                   </NavHashLink>
                   {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
                   <Link to="/contacts">
@@ -226,10 +214,7 @@ const InfoNav = () => {
                 </div>
               )}
               <Button variant="outline" width={matches ? "270px" : "130px"}>
-                <FormattedMessage
-                  id="navbar.pay"
-                  // defaultMessage="КТО МЫ"
-                />
+                <FormattedMessage id="navbar.pay" />
               </Button>
             </Container>
           </Toolbar>

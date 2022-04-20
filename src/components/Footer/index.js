@@ -1,21 +1,16 @@
 import React from "react";
 import Container from "@mui/material/Container";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
-import { Grid } from "@mui/material";
+import { FormattedMessage } from "react-intl";
 
 import Button from "../Button";
 import LinkedInIcon from "../../assests/icons/LinkedInIcon";
-import PhoneIcon from "../../assests/icons/PhoneIcon";
-import InstagramIcon from "../../assests/icons/InstagramIcon";
 import FacebookIcon from "../../assests/icons/FacebookIcon";
 import TelegramIcon from "../../assests/icons/TelegramIcon";
-import TwitterIcon from "../../assests/icons/TwitterIcon";
 import LogoImg from "../../assests/images/Logo.png";
-
-import { FormattedMessage } from "react-intl";
-
 import { useStyles } from "./styles";
 
 const Footer = () => {

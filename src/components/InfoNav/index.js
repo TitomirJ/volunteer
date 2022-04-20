@@ -2,37 +2,26 @@ import React, { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { NavHashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import {
+  FormattedMessage,
+} from "react-intl";
 
 import Button from "../Button";
 import LogoImg from "../../assests/images/Logo.png";
 import LinkedInIcon from "../../assests/icons/LinkedInIcon";
-import PhoneIcon from "../../assests/icons/PhoneIcon";
-import InstagramIcon from "../../assests/icons/InstagramIcon";
 import FacebookIcon from "../../assests/icons/FacebookIcon";
 import TelegramIcon from "../../assests/icons/TelegramIcon";
-import YoutubeIcon from "../../assests/icons/YoutubeIcon";
-import TwitterIcon from "../../assests/icons/TwitterIcon";
 import CloseIcon from "../../assests/icons/CloseIcon";
 import MenuIcon from "../../assests/icons/MenuIcon";
-
 import LangSwitcher from "../LangSwitcher/LangSwitcher";
-
-import {
-  FormattedDate,
-  FormattedNumber,
-  FormattedPlural,
-  useIntl,
-  FormattedMessage,
-} from "react-intl";
-
 import { useStyles } from "./styles";
 
 const InfoNav = () => {
-  const intl = useIntl();
-  console.log("intl", intl);
+  // const intl = useIntl();
+  // console.log("intl", intl);
 
   const classes = useStyles();
   const [menuOpened, setMenuOpened] = useState(false);
@@ -65,19 +54,21 @@ const InfoNav = () => {
             {!menuOpened && (
               <>
                 <LangSwitcher />
-                <a
-                  href="tel:+380 (98) 157 68 90"
-                  className={classes.linksToContact}
-                >
-                  +380 (98) 157 68 90
-                </a>
                 {!xsDevice && (
-                  <a
-                    href="mailto:bfIlovelife@gmail.com"
-                    className={classes.linksToContact}
-                  >
-                    bfIlovelife@gmail.com
-                  </a>
+                    <>
+                      <a
+                          href="tel:+380 (98) 157 68 90"
+                          className={classes.linksToContact}
+                      >
+                        +380 (98) 157 68 90
+                      </a>
+                      <a
+                        href="mailto:bfIlovelife@gmail.com"
+                        className={classes.linksToContact}
+                      >
+                        bfIlovelife@gmail.com
+                      </a>
+                    </>
                 )}
               </>
             )}

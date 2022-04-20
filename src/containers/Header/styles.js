@@ -25,6 +25,7 @@ export const useStyles = makeStyles(() => ({
         color: '#FFF8D1',
         marginTop: '200px',
         textShadow: '0px 4px 15px rgba(0, 0, 0, 0.25)',
+        textAlign: 'center',
 
         '& span': {
             color: '#B3E3FF'

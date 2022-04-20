@@ -1,5 +1,5 @@
 import { FormControl, Select, MenuItem, makeStyles } from "@material-ui/core";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import AppContext from "./../../context/AppContext";
 
 import UkrainianFlagIcon from "./../../assests/icons/UkrainianFlagIcon";
@@ -30,15 +30,7 @@ const dropdownStyles = makeStyles({
 
 const LangSwitcher = () => {
   const ddnSt = dropdownStyles();
-
   const { lang, switchLang } = useContext(AppContext);
-
-  const selectStyle = {
-    control: (base) => ({
-      ...base,
-      boxShadow: "none",
-    }),
-  };
 
   const handleChange = (event) => {
     switchLang(event.target.value);

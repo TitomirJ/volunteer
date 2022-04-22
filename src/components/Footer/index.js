@@ -14,6 +14,20 @@ import LogoImg from "../../assests/images/Logo.png";
 import { useStyles } from "./styles";
 
 const Footer = () => {
+  function createOrder(amount, order_desc) {
+    var button = window?.$ipsp.get("button");
+    button.setMerchantId(1503310);
+    button.setAmount(amount, "USD");
+    button.setResponseUrl("http://example.com/result/");
+    button.setHost("pay.fondy.eu");
+    button.addField({
+      label: "Описание покупки",
+      name: "order_desc",
+      value: order_desc,
+    });
+    return button.getUrl();
+  }
+
   const classes = useStyles();
   const matches = useMediaQuery("(min-width:1025px)");
   const xsDevice = useMediaQuery("(max-width:480px)");
@@ -39,13 +53,20 @@ const Footer = () => {
               </Link>
             </div>
           )}
-          <Button
-            variant="outline"
-            fontSize={!matches && "10px"}
-            width={matches ? "270px" : "130px"}
+          <a
+            style={{ textDecoration: "none" }}
+            target="_blank"
+            rel="noreferrer"
+            href={createOrder("", "ПОЖЕРТВОВАТЬ")}
           >
-            <FormattedMessage id="navbar.pay" />
-          </Button>
+            <Button
+              variant="outline"
+              fontSize={!matches && "10px"}
+              width={matches ? "270px" : "130px"}
+            >
+              <FormattedMessage id="navbar.pay" />
+            </Button>
+          </a>
         </Grid>
         <Grid
           container

@@ -9,6 +9,20 @@ import { useStyles } from "./styles";
 const Header = () => {
   const classes = useStyles();
 
+  function createOrder(amount, order_desc) {
+    var button = window?.$ipsp.get("button");
+    button.setMerchantId(1503310);
+    button.setAmount(amount, "USD");
+    button.setResponseUrl("http://example.com/result/");
+    button.setHost("pay.fondy.eu");
+    button.addField({
+      label: "Описание покупки",
+      name: "order_desc",
+      value: order_desc,
+    });
+    return button.getUrl();
+  }
+
   return (
     <div
       id="header"
@@ -39,9 +53,16 @@ const Header = () => {
             </li>
           </ul>
           <div className={classes.blockButton}>
-            <Button variant="yellowPrimary">
-              <FormattedMessage id="help" />
-            </Button>
+            <a
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noreferrer"
+              href={createOrder("", "ПОЖЕРТВОВАТЬ")}
+            >
+              <Button variant="yellowPrimary">
+                <FormattedMessage id="help" />
+              </Button>
+            </a>
           </div>
         </div>
         <div className={classes.block}>
@@ -60,9 +81,16 @@ const Header = () => {
             </li>
           </ul>
           <div className={classes.blockButton}>
-            <Button variant="primary">
-              <FormattedMessage id="help" />
-            </Button>
+            <a
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noreferrer"
+              href={createOrder("", "ПОЖЕРТВОВАТЬ")}
+            >
+              <Button variant="primary">
+                <FormattedMessage id="help" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

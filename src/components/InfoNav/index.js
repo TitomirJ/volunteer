@@ -5,9 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { NavHashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
-import {
-  FormattedMessage,
-} from "react-intl";
+import { FormattedMessage } from "react-intl";
 
 import Button from "../Button";
 import LogoImg from "../../assests/images/Logo.png";
@@ -20,8 +18,19 @@ import LangSwitcher from "../LangSwitcher/LangSwitcher";
 import { useStyles } from "./styles";
 
 const InfoNav = () => {
-  // const intl = useIntl();
-  // console.log("intl", intl);
+  function createOrder(amount, order_desc) {
+    var button = window?.$ipsp.get("button");
+    button.setMerchantId(1503310);
+    button.setAmount(amount, "USD");
+    button.setResponseUrl("http://example.com/result/");
+    button.setHost("pay.fondy.eu");
+    button.addField({
+      label: "Описание покупки",
+      name: "order_desc",
+      value: order_desc,
+    });
+    return button.getUrl();
+  }
 
   const classes = useStyles();
   const [menuOpened, setMenuOpened] = useState(false);
@@ -55,20 +64,20 @@ const InfoNav = () => {
               <>
                 <LangSwitcher />
                 {!xsDevice && (
-                    <>
-                      <a
-                          href="tel:+380 (98) 157 68 90"
-                          className={classes.linksToContact}
-                      >
-                        +380 (98) 157 68 90
-                      </a>
-                      <a
-                        href="mailto:bfIlovelife@gmail.com"
-                        className={classes.linksToContact}
-                      >
-                        bfIlovelife@gmail.com
-                      </a>
-                    </>
+                  <>
+                    <a
+                      href="tel:+380 (98) 157 68 90"
+                      className={classes.linksToContact}
+                    >
+                      +380 (98) 157 68 90
+                    </a>
+                    <a
+                      href="mailto:bfIlovelife@gmail.com"
+                      className={classes.linksToContact}
+                    >
+                      bfIlovelife@gmail.com
+                    </a>
+                  </>
                 )}
               </>
             )}
@@ -124,10 +133,7 @@ const InfoNav = () => {
                     <FormattedMessage id="navbar.whoAreWe" />
                   </NavHashLink>
                   <NavHashLink smooth to="/#howToHelp">
-                    <FormattedMessage
-                      id="navbar.howToHelp"
-                      // defaultMessage="КТО МЫ"
-                    />
+                    <FormattedMessage id="navbar.howToHelp" />
                   </NavHashLink>
                   {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
                   <Link to="/contacts">
@@ -197,16 +203,20 @@ const InfoNav = () => {
                   </NavHashLink>
                   {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
                   <Link to="/contacts">
-                    <FormattedMessage
-                      id="navbar.contacts"
-                      // defaultMessage="КТО МЫ"
-                    />
+                    <FormattedMessage id="navbar.contacts" />
                   </Link>
                 </div>
               )}
-              <Button variant="outline" width={matches ? "270px" : "130px"}>
-                <FormattedMessage id="navbar.pay" />
-              </Button>
+              <a
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                rel="noreferrer"
+                href={createOrder("", "ПОЖЕРТВОВАТЬ")}
+              >
+                <Button variant="outline" width={matches ? "270px" : "130px"}>
+                  <FormattedMessage id="navbar.pay" />
+                </Button>
+              </a>
             </Container>
           </Toolbar>
         )}

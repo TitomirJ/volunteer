@@ -58,7 +58,7 @@ const InfoNav = () => {
         <Toolbar className={!menuOpened ? classes.main : classes.mainMob}>
           <Container
             className={!menuOpened ? classes.main : classes.mainMob}
-            maxWidth="md"
+            maxWidth='md'
           >
             {!menuOpened && (
               <>
@@ -66,13 +66,13 @@ const InfoNav = () => {
                 {!xsDevice && (
                   <>
                     <a
-                      href="tel:+380 (98) 157 68 90"
+                      href='tel:+380 (98) 157 68 90'
                       className={classes.linksToContact}
                     >
                       +380 (98) 157 68 90
                     </a>
                     <a
-                      href="mailto:bfIlovelife@gmail.com"
+                      href='mailto:bfIlovelife@gmail.com'
                       className={classes.linksToContact}
                     >
                       bfIlovelife@gmail.com
@@ -84,9 +84,9 @@ const InfoNav = () => {
             {matches ? (
               <div className={classes.socialIconsBlock}>
                 <a
-                  target="_blank"
-                  href="https://www.linkedin.com/company/nazustrichzhittyu"
-                  rel="noreferrer"
+                  target='_blank'
+                  href='https://www.linkedin.com/company/nazustrichzhittyu'
+                  rel='noreferrer'
                 >
                   <LinkedInIcon />
                 </a>
@@ -101,16 +101,16 @@ const InfoNav = () => {
                   <InstagramIcon />
                 </a> */}
                 <a
-                  target="_blank"
-                  href="https://www.facebook.com/bftowardslife"
-                  rel="noreferrer"
+                  target='_blank'
+                  href='https://www.facebook.com/bftowardslife'
+                  rel='noreferrer'
                 >
                   <FacebookIcon />
                 </a>
                 <a
-                  target="_blank"
-                  href="https://t.me/nazustrichzhittyu"
-                  rel="noreferrer"
+                  target='_blank'
+                  href='https://t.me/nazustrichzhittyu'
+                  rel='noreferrer'
                 >
                   <TelegramIcon />
                 </a>
@@ -129,24 +129,24 @@ const InfoNav = () => {
             {menuOpened && (
               <>
                 <div className={classes.menu}>
-                  <NavHashLink smooth to="/#aboutUs">
-                    <FormattedMessage id="navbar.whoAreWe" />
+                  <NavHashLink smooth to='/#aboutUs'>
+                    <FormattedMessage id='navbar.whoAreWe' />
                   </NavHashLink>
-                  <NavHashLink smooth to="/#howToHelp">
-                    <FormattedMessage id="navbar.howToHelp" />
+                  <NavHashLink smooth to='/#howToHelp'>
+                    <FormattedMessage id='navbar.howToHelp' />
                   </NavHashLink>
                   {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
-                  <Link to="/contacts">
-                    <FormattedMessage id="navbar.contacts" />
+                  <Link to='/contacts'>
+                    <FormattedMessage id='navbar.contacts' />
                   </Link>
                 </div>
                 <div className={classes.socialIconsBlock}>
                   <a
-                    target="_blank"
-                    href="https://www.linkedin.com/company/nazustrichzhittyu"
-                    rel="noreferrer"
+                    target='_blank'
+                    href='https://www.linkedin.com/company/nazustrichzhittyu'
+                    rel='noreferrer'
                   >
-                    <LinkedInIcon width="30" height="30" />
+                    <LinkedInIcon width='30' height='30' />
                   </a>
                   {/* <a href="tel:+380 (98) 157 68 90">
                     <PhoneIcon width="30" height="30" />
@@ -159,18 +159,18 @@ const InfoNav = () => {
                     <InstagramIcon width="30" height="30" />
                   </a> */}
                   <a
-                    target="_blank"
-                    href="https://www.facebook.com/bftowardslife"
-                    rel="noreferrer"
+                    target='_blank'
+                    href='https://www.facebook.com/bftowardslife'
+                    rel='noreferrer'
                   >
-                    <FacebookIcon width="30" height="30" />
+                    <FacebookIcon width='30' height='30' />
                   </a>
                   <a
-                    target="_blank"
-                    href="https://t.me/nazustrichzhittyu"
-                    rel="noreferrer"
+                    target='_blank'
+                    href='https://t.me/nazustrichzhittyu'
+                    rel='noreferrer'
                   >
-                    <TelegramIcon width="30" height="30" />
+                    <TelegramIcon width='30' height='30' />
                   </a>
                   {/* <a
                     target="_blank"
@@ -188,33 +188,34 @@ const InfoNav = () => {
           <Toolbar className={classes.subMain}>
             <Container
               className={`${classes.subMain} ${classes.sub}`}
-              maxWidth="md"
+              maxWidth='md'
             >
-              <NavHashLink smooth to="/#header" className={classes.logo}>
-                <img src={LogoImg} alt="" />
+              <NavHashLink smooth to='/#header' className={classes.logo}>
+                <img src={LogoImg} alt='' />
               </NavHashLink>
               {matches && (
                 <div className={classes.menu}>
-                  <NavHashLink smooth to="/#aboutUs">
-                    <FormattedMessage id="navbar.whoAreWe" />
+                  <NavHashLink smooth to='/#aboutUs'>
+                    <FormattedMessage id='navbar.whoAreWe' />
                   </NavHashLink>
-                  <NavHashLink smooth to="/#howToHelp">
-                    <FormattedMessage id="navbar.howToHelp" />
+                  <NavHashLink smooth to='/#howToHelp'>
+                    <FormattedMessage id='navbar.howToHelp' />
                   </NavHashLink>
                   {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
-                  <Link to="/contacts">
-                    <FormattedMessage id="navbar.contacts" />
+                  <Link to='/contacts'>
+                    <FormattedMessage id='navbar.contacts' />
                   </Link>
                 </div>
               )}
               <a
                 style={{ textDecoration: "none" }}
-                target="_blank"
-                rel="noreferrer"
-                href={createOrder("", "ПОЖЕРТВОВАТЬ")}
+                target='_blank'
+                rel='noreferrer'
+                // href={createOrder("", "ПОЖЕРТВОВАТЬ")}
+                href='https://secure.wayforpay.com/donate/d4860d51432ee'
               >
-                <Button variant="outline" width={matches ? "270px" : "130px"}>
-                  <FormattedMessage id="navbar.pay" />
+                <Button variant='outline' width={matches ? "270px" : "130px"}>
+                  <FormattedMessage id='navbar.pay' />
                 </Button>
               </a>
             </Container>

@@ -34,52 +34,53 @@ const Footer = () => {
 
   return (
     <div className={classes.footer}>
-      <Container maxWidth="md">
-        <Grid container alignItems="center" justifyContent="space-between">
-          <NavHashLink smooth to="/#header" className={classes.logo}>
-            <img src={LogoImg} alt="" />
+      <Container maxWidth='md'>
+        <Grid container alignItems='center' justifyContent='space-between'>
+          <NavHashLink smooth to='/#header' className={classes.logo}>
+            <img src={LogoImg} alt='' />
           </NavHashLink>
           {matches && (
             <div className={classes.menu}>
-              <NavHashLink smooth to="/#aboutUs">
-                <FormattedMessage id="navbar.whoAreWe" />
+              <NavHashLink smooth to='/#aboutUs'>
+                <FormattedMessage id='navbar.whoAreWe' />
               </NavHashLink>
-              <NavHashLink smooth to="/#howToHelp">
-                <FormattedMessage id="navbar.howToHelp" />
+              <NavHashLink smooth to='/#howToHelp'>
+                <FormattedMessage id='navbar.howToHelp' />
               </NavHashLink>
               {/* <Link to="/projects">ПРОЕКТЫ</Link> */}
-              <Link to="/contacts">
-                <FormattedMessage id="navbar.contacts" />
+              <Link to='/contacts'>
+                <FormattedMessage id='navbar.contacts' />
               </Link>
             </div>
           )}
           <a
             style={{ textDecoration: "none" }}
-            target="_blank"
-            rel="noreferrer"
-            href={createOrder("", "ПОЖЕРТВОВАТЬ")}
+            target='_blank'
+            rel='noreferrer'
+            // href={createOrder("", "ПОЖЕРТВОВАТЬ")}
+            href='https://secure.wayforpay.com/donate/d4860d51432ee'
           >
             <Button
-              variant="outline"
+              variant='outline'
               fontSize={!matches && "10px"}
               width={matches ? "270px" : "130px"}
             >
-              <FormattedMessage id="navbar.pay" />
+              <FormattedMessage id='navbar.pay' />
             </Button>
           </a>
         </Grid>
         <Grid
           container
-          alignItems="center"
-          justifyContent="space-between"
+          alignItems='center'
+          justifyContent='space-between'
           style={{ marginTop: "30px" }}
         >
-          <a href="tel:+380 (98) 157 68 90" className={classes.linksToContact}>
+          <a href='tel:+380 (98) 157 68 90' className={classes.linksToContact}>
             +380 (98) 157 68 90
           </a>
           {!xsDevice && (
             <a
-              href="mailto:bfIlovelife@gmail.com"
+              href='mailto:bfIlovelife@gmail.com'
               className={classes.linksToContact}
             >
               bfIlovelife@gmail.com
@@ -88,9 +89,9 @@ const Footer = () => {
           {matches && (
             <div className={classes.socialIconsBlock}>
               <a
-                target="_blank"
-                href="https://www.linkedin.com/company/nazustrichzhittyu"
-                rel="noreferrer"
+                target='_blank'
+                href='https://www.linkedin.com/company/nazustrichzhittyu'
+                rel='noreferrer'
               >
                 <LinkedInIcon />
               </a>
@@ -101,16 +102,16 @@ const Footer = () => {
                                 <InstagramIcon/>
                             </a> */}
               <a
-                target="_blank"
-                href="https://www.facebook.com/bftowardslife"
-                rel="noreferrer"
+                target='_blank'
+                href='https://www.facebook.com/bftowardslife'
+                rel='noreferrer'
               >
                 <FacebookIcon />
               </a>
               <a
-                target="_blank"
-                href="https://t.me/nazustrichzhittyu"
-                rel="noreferrer"
+                target='_blank'
+                href='https://t.me/nazustrichzhittyu'
+                rel='noreferrer'
               >
                 <TelegramIcon />
               </a>

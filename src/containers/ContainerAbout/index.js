@@ -47,7 +47,7 @@ const ContainerAbout = () => {
             </span>
             <br />
             <br />
-            <FormattedMessage id='secondBlock.text4' />
+            {/* <FormattedMessage id='secondBlock.text4' /> */}
           </Grid>
           <Grid item xs={12} md={6}>
             <FormattedMessage id='secondBlock.text5' />{" "}

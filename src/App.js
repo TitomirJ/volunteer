@@ -31,11 +31,9 @@ const App = (props) => {
     }
   }, [projectsList]);
 
-  // const AppContext = React.createContext();
+  const [lang, setLang] = React.useState("uk");
 
-  const [lang, setLang] = React.useState("ru");
-
-  const [messages, setMessages] = React.useState(ru);
+  const [messages, setMessages] = React.useState(uk);
 
   const switchLang = (value) => {
     setLang(value);
@@ -58,24 +56,24 @@ const App = (props) => {
         defaultLocale={lang}
         key={lang}
       >
-        <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">
+        <Worker workerUrl='https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js'>
           {!projectsLoading ? (
             <Router>
               <Switch>
                 <Route
-                  path="/"
+                  path='/'
                   component={() => (
                     <Main {...props} projectsList={projectsList} />
                   )}
                   exact
                 />
                 <Route
-                  path="/projects"
+                  path='/projects'
                   component={() => (
                     <Projects {...props} projectsList={projectsList} />
                   )}
                 />
-                <Route path="/contacts" component={() => <Contacts />} />
+                <Route path='/contacts' component={() => <Contacts />} />
               </Switch>
             </Router>
           ) : (

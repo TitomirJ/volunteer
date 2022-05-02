@@ -30,23 +30,23 @@ const Contacts = () => {
       <InfoNav />
       <main style={{ margin: "195px 0 140px" }}>
         <div style={{ position: "relative", padding: "2px 0 0" }}>
-          <LineBg color="#FFFAE1" />
-          <Container maxWidth="md">
-            <Title title={<FormattedMessage id="contactInfo.title" />} />
+          <LineBg color='#FFFAE1' />
+          <Container maxWidth='md'>
+            <Title title={<FormattedMessage id='contactInfo.title' />} />
             <Grid container spacing={2}>
               <Grid item xs={12} md={6}>
                 <div className={classes.block}>
-                  <PhoneIcon width="60" height="60" color="#FFF8D1" />
-                  <a href="tel:+380 (98) 157 68 90">+380 (98) 157 68 90</a>
+                  <PhoneIcon width='60' height='60' color='#FFF8D1' />
+                  <a href='tel:+380 (98) 157 68 90'>+380 (98) 157 68 90</a>
                   <span>
-                    <FormattedMessage id="phone" />
+                    <FormattedMessage id='phone' />
                   </span>
                 </div>
               </Grid>
               <Grid item xs={12} md={6}>
                 <div className={classes.block}>
-                  <EmailIcon width="60" height="60" color="#FFF8D1" />
-                  <a href="mailto:bfIlovelife@gmail.com">
+                  <EmailIcon width='60' height='60' color='#FFF8D1' />
+                  <a href='mailto:bfIlovelife@gmail.com'>
                     bfIlovelife@gmail.com
                   </a>
                   <span>e-mail</span>
@@ -55,70 +55,106 @@ const Contacts = () => {
             </Grid>
           </Container>
           <ContainerSocial />
-          <Container className={classes.schedule} maxWidth="md">
-            <SubTitle title={<FormattedMessage id="schedule" />} />
+          <Container className={classes.schedule} maxWidth='md'>
+            <SubTitle title={<FormattedMessage id='schedule' />} />
             <ClockIcon />
             <p>
-              <FormattedMessage id="schedule.time" />
+              <FormattedMessage id='schedule.time' />
             </p>
           </Container>
           <div
-            id="requisites"
+            id='requisites'
             style={{ position: "relative", padding: "2px 0 0" }}
           >
-            <Title title={<FormattedMessage id="requisites" />} />
-            <LineBg color="#FFFAE1" />
-            <Container className={classes.requisites} maxWidth="md">
+            <Title title={<FormattedMessage id='requisites' />} />
+            <LineBg color='#FFFAE1' />
+            <Container className={classes.requisites} maxWidth='md'>
               <div>
                 <UkrainianFlagIcon />
                 <p>
-                  <FormattedMessage id="payment" />
+                  <FormattedMessage id='payment' />
                 </p>
               </div>
               <div style={{ marginBottom: "50px" }}>
                 <p>
-                  <FormattedMessage id="payment1" /> <br />
-                  <FormattedMessage id="payment2" /> <br />
+                  <FormattedMessage id='payment1' /> <br />
+                  <FormattedMessage id='payment2' /> <br />
                   <br />
-                  <FormattedMessage id="payment3" />
+                  <FormattedMessage id='payment3' />
                   <br />
                   <br />
-                  <FormattedMessage id="payment4" />
+                  <FormattedMessage id='payment4' />
                   <br />
-                  <FormattedMessage id="payment5" />
+                  <FormattedMessage id='payment5' />
                   <br />
                 </p>
               </div>
               <div>
-                <EarthIcon width="34" />
+                <EarthIcon width='34' />
                 <p>
-                  <FormattedMessage id="payment6" />
+                  <FormattedMessage id='payment6' />
                 </p>
               </div>
               <div>
                 <p>
-                  For USD
+                  Company details (USD)
                   <br />
                   <br />
-                  IBAN UA783133990000026002030202244
+                  Company address: Ukraine, 69071, flat 50, Parhomenko 4 street,
+                  Zaporizhzhya
                   <br />
-                  Bank SWIFT Code - PBANUA2X
+                  IBAN Code: UA783133990000026002030202244
                   <br />
-                  Recipient: CO "Towards Life"
+                  Name of the bank:JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR.,
+                  KYIV, 01001, UKRAINE Bank SWIFT Code: PBANUA2X
                   <br />
-                  Description: donation for army
-                  <br />
-                  <br />
-                  For Euro
+                  Bank SWIFT Code: PBANUA2X
                   <br />
                   <br />
-                  IBAN UA513133990000026001010201073
+                  Correspondent banks:
                   <br />
-                  SWIFT code банку - PBANUA2X
                   <br />
-                  Recipient: CO "Towards Life"
+                  1. Account in the correspondent bank: 001-1-000080
                   <br />
-                  Description: donation for army
+                  SWIFT Code of the correspondent bank: CHASUS33
+                  <br />
+                  Correspondent bank: JP Morgan Chase Bank, New York ,USA
+                  <br />
+                  2. Account in the correspondent bank:890-0085-754
+                  <br />
+                  SWIFT Code of the correspondent bank: IRVT US 3N
+                  <br />
+                  Correspondent bank: The Bank of New York Mellon, New York, USA
+                  <br />
+                  <br />
+                  Company details (Euro)
+                  <br />
+                  <br />
+                  Company address: Ukraine, 69071, flat 50, Parhomenko 4 street,
+                  Zaporizhzhya
+                  <br />
+                  IBAN Code: UA513133990000026001010201073
+                  <br />
+                  Name of the bank: JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR.,
+                  KYIV, 01001, UKRAINE
+                  <br />
+                  Bank SWIFT Code: PBANUA2X
+                  <br />
+                  <br />
+                  Correspondent banks:
+                  <br />
+                  <br />
+                  1. Account in the correspondent bank: 400886700401
+                  <br />
+                  SWIFT Code of the correspondent bank: COBADEFF
+                  <br />
+                  Correspondent bank: Commerzbank AG, Frankfurt am Main, Germany
+                  <br />
+                  2. Account in the correspondent bank: 6231605145
+                  <br />
+                  SWIFT Code of the correspondent bank: CHASDEFX
+                  <br />
+                  Correspondent bank: J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY
                   <br />
                   <br />
                   Crypto

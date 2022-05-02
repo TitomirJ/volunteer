@@ -76,14 +76,14 @@ const ContainerAbout = () => {
             </span>{" "} */}
             {/* 💪 🇺🇦 */}
           </Grid>
-          <Grid container justifyContent='center'>
-            <div className={classes.button}>
-              {/* <Button to="/projects" variant="primary">НАШИ ПРОЕКТЫ</Button> */}
-              <Button variant='primary' disabled={true}>
-                <FormattedMessage id='secondBlock.ourProjects' />
-              </Button>
-            </div>
-          </Grid>
+          {/*<Grid container justifyContent='center'>*/}
+          {/*  <div className={classes.button}>*/}
+          {/*    /!* <Button to="/projects" variant="primary">НАШИ ПРОЕКТЫ</Button> *!/*/}
+          {/*    <Button variant='primary' disabled={true}>*/}
+          {/*      <FormattedMessage id='secondBlock.ourProjects' />*/}
+          {/*    </Button>*/}
+          {/*  </div>*/}
+          {/*</Grid>*/}
         </Grid>
       </Container>
     </div>

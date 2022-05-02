@@ -8,7 +8,12 @@ import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
+import styles from "./modal.module.scss";
+
 export const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+  "& > .MuiDialog-container > .MuiPaper-root": {
+    "border-radius": "12px",
+  },
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
     width: "300px",
@@ -27,7 +32,7 @@ export const BootstrapDialogTitle = (props) => {
       {children}
       {onClose ? (
         <IconButton
-          aria-label="close"
+          aria-label='close'
           onClick={onClose}
           sx={{
             position: "absolute",
@@ -49,36 +54,23 @@ BootstrapDialogTitle.propTypes = {
 };
 
 export default function CustomizedDialogs({ title, body, handleClose, open }) {
-  // let body;
-  // if (title === <FormattedMessage id="fullName1" />) {
-  //   body = <FormattedMessage id="roles.person1" />;
-  // }
-  // if (title === <FormattedMessage id="fullName2" />) {
-  //   body = <FormattedMessage id="roles.person2" />;
-  // }
-  // if (title === <FormattedMessage id="fullName3" />) {
-  //   body = <FormattedMessage id="roles.person3" />;
-  // }
-  // if (title === <FormattedMessage id="fullName4" />) {
-  //   body = <FormattedMessage id="roles.person4" />;
-  // }
-
   return (
     <div>
       <BootstrapDialog
+        className={styles.modal}
         onClose={handleClose}
-        aria-labelledby="customized-dialog-title"
+        aria-labelledby='customized-dialog-title'
         open={open}
       >
         <BootstrapDialogTitle
-          fontSize="24px"
-          id="customized-dialog-title"
+          fontSize='24px'
+          id='customized-dialog-title'
           onClose={handleClose}
         >
           {title}
         </BootstrapDialogTitle>
         <DialogContent dividers>
-          <Typography fontSize="18px" word-break="break-word" gutterBottom>
+          <Typography fontSize='18px' word-break='break-word' gutterBottom>
             {body}
           </Typography>
         </DialogContent>

@@ -29,45 +29,45 @@ const ContainerHowToHelp = () => {
   }
 
   return (
-    <div id="howToHelp" className={classes.container}>
-      <LineBg color="rgb(255 242 175)" />
-      <Container maxWidth="md">
-        <Title title={<FormattedMessage id="howToHelp" />} />
+    <div id='howToHelp' className={classes.container}>
+      <LineBg color='rgb(255 242 175)' />
+      <Container maxWidth='md'>
+        <Title title={<FormattedMessage id='howToHelp' />} />
         <Grid container spacing={4} style={{ marginTop: "60px" }}>
           <Grid item xs={12} md={4}>
             <div className={classes.block}>
               <h4>
-                <FormattedMessage id="howToHelp1" />
+                <FormattedMessage id='howToHelp1' />
               </h4>
               <p style={{ marginBottom: "20px" }}>
-                <FormattedMessage id="howToHelp2" />
+                <FormattedMessage id='howToHelp2' />
               </p>
               <a
                 style={{ textDecoration: "none" }}
-                target="_blank"
-                rel="noreferrer"
+                target='_blank'
+                rel='noreferrer'
                 href={createOrder("", "ПОЖЕРТВОВАТЬ")}
               >
-                <Button variant="primary">
-                  <FormattedMessage id="howToHelp3" />
+                <Button variant='primary'>
+                  <FormattedMessage id='howToHelp3' />
                 </Button>
               </a>
 
               {/* <Button to="/projects" style={{margin: "33px 0"}} variant="outline">помогите нам собрать средства на...</Button> */}
               <Grid
                 container
-                alignItems="center"
-                justifyContent="center"
+                alignItems='center'
+                justifyContent='center'
                 style={{ cursor: "pointer" }}
               >
                 <CardIcon />
                 <NavHashLink
                   style={{ color: "white", textDecoration: "none" }}
                   smooth
-                  to="/contacts/#requisites"
+                  to='/contacts/#requisites'
                 >
                   <p style={{ fontWeight: 700, marginLeft: "16px" }}>
-                    <FormattedMessage id="howToHelp4" />
+                    <FormattedMessage id='howToHelp4' />
                   </p>
                 </NavHashLink>
               </Grid>
@@ -76,41 +76,41 @@ const ContainerHowToHelp = () => {
           <Grid item xs={12} md={4}>
             <div className={classes.block}>
               <h4>
-                <FormattedMessage id="howToHelp5" />
+                <FormattedMessage id='howToHelp5' />
               </h4>
               <ul>
                 <li>
-                  <FormattedMessage id="howToHelp6" />
+                  <FormattedMessage id='howToHelp6' />
                 </li>
                 <li>
-                  <FormattedMessage id="howToHelp7" />
+                  <FormattedMessage id='howToHelp7' />
                 </li>
                 <li>
-                  <FormattedMessage id="howToHelp8" />
+                  <FormattedMessage id='howToHelp8' />
                 </li>
                 <li>
-                  <FormattedMessage id="howToHelp9" />
+                  <FormattedMessage id='howToHelp9' />
                 </li>
                 <li>
-                  <FormattedMessage id="howToHelp10" />
+                  <FormattedMessage id='howToHelp10' />
                 </li>
                 <li>
-                  <FormattedMessage id="howToHelp11" />
+                  <FormattedMessage id='howToHelp11' />
                 </li>
-                <li>
+                {/* <li>
                   <FormattedMessage id="howToHelp12" />
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <FormattedMessage id="howToHelp13" />
-                </li>
+                </li> */}
               </ul>
               <NavHashLink
                 style={{ color: "white", textDecoration: "none" }}
                 smooth
-                to="/contacts/#requisites"
+                to='/contacts/#requisites'
               >
-                <Button variant="yellowPrimary">
-                  <FormattedMessage id="howToHelp14" />
+                <Button variant='yellowPrimary'>
+                  <FormattedMessage id='howToHelp14' />
                 </Button>
               </NavHashLink>
             </div>
@@ -118,12 +118,12 @@ const ContainerHowToHelp = () => {
           <Grid item xs={12} md={4}>
             <div className={classes.block}>
               <h4>
-                <FormattedMessage id="howToHelp15" /> <br />{" "}
-                <FormattedMessage id="howToHelp16" />
+                <FormattedMessage id='howToHelp15' /> <br />{" "}
+                <FormattedMessage id='howToHelp16' />
               </h4>
               <ul>
                 <span>
-                  <FormattedMessage id="howToHelp17" />{" "}
+                  <FormattedMessage id='howToHelp17' />{" "}
                 </span>
                 {/*<span>помощь нужна</span> самая разная. все зависит от вашего{" "}*/}
                 {/*<span>желания</span> и свободного <span>времени</span>:*/}
@@ -140,10 +140,10 @@ const ContainerHowToHelp = () => {
               <NavHashLink
                 style={{ color: "white", textDecoration: "none" }}
                 smooth
-                to="/contacts"
+                to='/contacts'
               >
-                <Button variant="primary">
-                  <FormattedMessage id="howToHelp18" />
+                <Button variant='primary'>
+                  <FormattedMessage id='howToHelp18' />
                 </Button>
               </NavHashLink>
             </div>

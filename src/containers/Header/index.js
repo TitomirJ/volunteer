@@ -25,70 +25,70 @@ const Header = () => {
 
   return (
     <div
-      id="header"
+      id='header'
       className={classes.header}
       style={{ backgroundImage: `url(${HeaderBg})` }}
     >
       <h1 className={classes.title}>
-        <FormattedMessage id="firstBlock.bigTitle1" />
+        <FormattedMessage id='firstBlock.bigTitle1' />
         <br />
         <span>
-          <FormattedMessage id="firstBlock.bigTitle2" />
+          <FormattedMessage id='firstBlock.bigTitle2' />
         </span>
       </h1>
       <div className={classes.blocksWrapper}>
         <div className={classes.block}>
           <h2>
-            <FormattedMessage id="Kv" />
+            <FormattedMessage id='Kv' />
           </h2>
           <ul>
             <li>
-              <FormattedMessage id="needsKv1" />
+              <FormattedMessage id='needsKv1' />
             </li>
             <li>
-              <FormattedMessage id="needsKv2" />
+              <FormattedMessage id='needsKv2' />
             </li>
-            <li>
+            {/* <li>
               <FormattedMessage id="needsKv3" />
-            </li>
+            </li> */}
           </ul>
           <div className={classes.blockButton}>
             <a
               style={{ textDecoration: "none" }}
-              target="_blank"
-              rel="noreferrer"
+              target='_blank'
+              rel='noreferrer'
               href={createOrder("", "ПОЖЕРТВОВАТЬ")}
             >
-              <Button variant="yellowPrimary">
-                <FormattedMessage id="help" />
+              <Button variant='yellowPrimary'>
+                <FormattedMessage id='help' />
               </Button>
             </a>
           </div>
         </div>
         <div className={classes.block}>
           <h2>
-            <FormattedMessage id="Zp" />
+            <FormattedMessage id='Zp' />
           </h2>
           <ul>
             <li>
-              <FormattedMessage id="needsZp1" />
+              <FormattedMessage id='needsZp1' />
             </li>
             <li>
-              <FormattedMessage id="needsZp2" />
+              <FormattedMessage id='needsZp2' />
             </li>
             <li>
-              <FormattedMessage id="needsZp3" />
+              <FormattedMessage id='needsZp3' />
             </li>
           </ul>
           <div className={classes.blockButton}>
             <a
               style={{ textDecoration: "none" }}
-              target="_blank"
-              rel="noreferrer"
+              target='_blank'
+              rel='noreferrer'
               href={createOrder("", "ПОЖЕРТВОВАТЬ")}
             >
-              <Button variant="primary">
-                <FormattedMessage id="help" />
+              <Button variant='primary'>
+                <FormattedMessage id='help' />
               </Button>
             </a>
           </div>

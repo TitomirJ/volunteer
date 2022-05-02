@@ -12,15 +12,28 @@ import styles from "./modal.module.scss";
 
 export const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& > .MuiDialog-container > .MuiPaper-root": {
-    "border-radius": "12px",
+    "border-radius": "6px",
+    padding: "0px 4px 0px 4px",
   },
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
     width: "300px",
+    color: "dimgray",
+    margin: "0",
+
+    "& p": {
+      fontWeight: "bold",
+      padding: "0",
+      margin: "0",
+    },
+    // fontSize: "16px",
   },
   "& .MuiDialogActions-root": {
     padding: theme.spacing(1),
     width: "300px",
+    color: "dimgray",
+    // fontWeight: "bold",
+    // fontSize: "16px",
   },
 }));
 
@@ -28,7 +41,7 @@ export const BootstrapDialogTitle = (props) => {
   const { children, onClose, ...other } = props;
 
   return (
-    <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
+    <DialogTitle className={styles.title} sx={{ m: 0, p: 2 }} {...other}>
       {children}
       {onClose ? (
         <IconButton
@@ -69,7 +82,7 @@ export default function CustomizedDialogs({ title, body, handleClose, open }) {
         >
           {title}
         </BootstrapDialogTitle>
-        <DialogContent dividers>
+        <DialogContent>
           <Typography fontSize='18px' word-break='break-word' gutterBottom>
             {body}
           </Typography>

@@ -96,7 +96,8 @@
   "payment": "Requisites for providing financial assistance by legal entities payment within Ukraine:",
   "payment1": "IBAN UA423133990000026001000203348",
   "payment2": "Assigned to payment: help army",
-  "payment3": "Card Monobank 4035200040167576 (Shevchenko Vladislav)",
+  "mono": "Card Monobank:",
+  "payment3": "4035200040167576 (Shevchenko Vladislav)",
   "payment4": "Privat Bank Card",
   "payment5": "5168745020475957 (Shevchenko Vladislav)",
   "payment6": "details for making a payment outside Ukraine:",
@@ -108,5 +109,7 @@
   "payment12": "Crypto",
   "payment13": "BTC: 1NLT946RhSmhj3PdvfDUaJVbjXBMZuycLG",
   "payment14": "ETH: 0x913f53d1216f7c6bca584a95b87f2a6d0d926bea",
-  "payment15": "USDT (Tron): TD7YW1FwUf5CRrQi792ihC54hj7zhavSvg"
+  "payment15": "USDT (Tron): TD7YW1FwUf5CRrQi792ihC54hj7zhavSvg",
+
+  "docs": "DOCUMENTS"
 }

@@ -80,6 +80,12 @@ const Contacts = () => {
                   <FormattedMessage id='payment1' /> <br />
                   <FormattedMessage id='payment2' /> <br />
                   <br />
+                  <a
+                    href='https://send.monobank.ua/jar/79GfPJRKqz'
+                    style={{ color: "blue" }}
+                  >
+                    <FormattedMessage id='mono' /> {""}
+                  </a>
                   <FormattedMessage id='payment3' />
                   <br />
                   <br />

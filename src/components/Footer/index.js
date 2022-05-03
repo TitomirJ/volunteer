@@ -51,6 +51,9 @@ const Footer = () => {
               <Link to='/contacts'>
                 <FormattedMessage id='navbar.contacts' />
               </Link>
+              <Link to='/documents'>
+                <FormattedMessage id='docs' />
+              </Link>
             </div>
           )}
           <a

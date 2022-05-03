@@ -21,6 +21,7 @@ import {
 } from "./redux/projects";
 import Loader from "./components/Loader";
 import Contacts from "./pages/Contacts";
+import Documents from "./pages/Documents/Documents";
 
 const App = (props) => {
   const { projectsList, getProjects, projectsLoading } = props;
@@ -74,6 +75,7 @@ const App = (props) => {
                   )}
                 />
                 <Route path='/contacts' component={() => <Contacts />} />
+                <Route path='/documents' component={() => <Documents />} />
               </Switch>
             </Router>
           ) : (

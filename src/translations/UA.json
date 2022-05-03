@@ -96,7 +96,8 @@
   "payment": "реквізити для здійснення оплати в межах України:",
   "payment1": "IBAN UA423133990000026001000203348",
   "payment2": "Призначення платежу: допомога армії",
-  "payment3": "Карта Монобанк 4035200040167576 (Шевченко Владислав)",
+  "mono": "Карта Монобанк:",
+  "payment3": "4035200040167576 (Шевченко Владислав)",
   "payment4": "Карта Приват Банк",
   "payment5": "5168745020475957 (Шевченко Владислав)",
   "payment6": "Реквізити для здійснення оплати юридичними особами, в тому числі за межами України:",
@@ -108,5 +109,7 @@
   "payment12": "Crypto",
   "payment13": "BTC: 1NLT946RhSmhj3PdvfDUaJVbjXBMZuycLG",
   "payment14": "ETH: 0x913f53d1216f7c6bca584a95b87f2a6d0d926bea",
-  "payment15": "USDT (Tron): TD7YW1FwUf5CRrQi792ihC54hj7zhavSvg"
+  "payment15": "USDT (Tron): TD7YW1FwUf5CRrQi792ihC54hj7zhavSvg",
+
+  "docs": "ДОКУМЕНТИ"
 }

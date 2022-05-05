@@ -23,6 +23,11 @@ const Header = () => {
 		return button.getUrl();
 	}
 
+	function runWfpWdgt(url) {
+		var wayforpay = new window.Wayforpay();
+		wayforpay.invoice(url);
+	}
+
 	return (
 		<div
 			id='header'
@@ -52,16 +57,22 @@ const Header = () => {
             </li> */}
 					</ul>
 					<div className={classes.blockButton}>
-						<a
+						{/* <a
 							style={{ textDecoration: "none" }}
 							target='_blank'
 							rel='noreferrer'
 							// href={createOrder("", "ПОЖЕРТВОВАТЬ")}>
-							href='https://secure.wayforpay.com/button/b3f4980e74803'>
-							<Button variant='yellowPrimary'>
-								<FormattedMessage id='help' />
-							</Button>
-						</a>
+							href='https://secure.wayforpay.com/button/b3f4980e74803'> */}
+						<Button
+							variant='yellowPrimary'
+							onClick={() =>
+								runWfpWdgt(
+									"https://secure.wayforpay.com/button/b3f4980e74803"
+								)
+							}>
+							<FormattedMessage id='help' />
+						</Button>
+						{/* </a> */}
 					</div>
 				</div>
 				<div className={classes.block}>
@@ -80,16 +91,22 @@ const Header = () => {
 						</li>
 					</ul>
 					<div className={classes.blockButton}>
-						<a
+						{/* <a
 							style={{ textDecoration: "none" }}
 							target='_blank'
 							rel='noreferrer'
 							// href={createOrder("", "ПОЖЕРТВОВАТЬ")}>
-							href='https://secure.wayforpay.com/button/b3f4980e74803'>
-							<Button variant='primary'>
-								<FormattedMessage id='help' />
-							</Button>
-						</a>
+							href='https://secure.wayforpay.com/button/b3f4980e74803'> */}
+						<Button
+							variant='primary'
+							onClick={() =>
+								runWfpWdgt(
+									"https://secure.wayforpay.com/button/b3f4980e74803"
+								)
+							}>
+							<FormattedMessage id='help' />
+						</Button>
+						{/* </a> */}
 					</div>
 				</div>
 			</div>

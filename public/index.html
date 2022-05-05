@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Фонд Допомоги ЗСУ Амуніцією" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Назустріч життю</title>
-    <script src="https://pay.fondy.eu/static_common/v1/checkout/ipsp.js"></script>
-    <script>
-      window.$ipsp = $ipsp;
-    </script>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="Фонд Допомоги ЗСУ Амуніцією" />
+		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<title>Назустріч життю</title>
+		<script src="https://pay.fondy.eu/static_common/v1/checkout/ipsp.js"></script>
+		<script>
+			window.$ipsp = $ipsp;
+		</script>
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root"></div>
+
+		<script
+			type="text/javascript"
+			id="widget-wfp-script"
+			src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"
+		></script>
+		<script>
+			window.Wayforpay = Wayforpay;
+		</script>
+	</body>
 </html>

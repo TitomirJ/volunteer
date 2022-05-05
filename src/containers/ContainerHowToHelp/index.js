@@ -40,6 +40,11 @@ const ContainerHowToHelp = () => {
 		return button.getUrl();
 	}
 
+	function runWfpWdgt(url) {
+		var wayforpay = new window.Wayforpay();
+		wayforpay.invoice(url);
+	}
+
 	return (
 		<div id='howToHelp' className={classes.container}>
 			<LineBg color='rgb(255 242 175)' />
@@ -128,13 +133,19 @@ const ContainerHowToHelp = () => {
 								}}
 								smooth
 								to='/contacts/#requisites'> */}
-							<a
+							{/* <a
 								style={{ textDecoration: "none" }}
-								href='https://secure.wayforpay.com/button/b3f4980e74803'>
-								<Button variant='yellowPrimary'>
-									<FormattedMessage id='howToHelp14' />
-								</Button>
-							</a>
+								href='https://secure.wayforpay.com/button/b3f4980e74803'> */}
+							<Button
+								variant='yellowPrimary'
+								onClick={() =>
+									runWfpWdgt(
+										"https://secure.wayforpay.com/button/b3f4980e74803"
+									)
+								}>
+								<FormattedMessage id='howToHelp14' />
+							</Button>
+							{/* </a> */}
 
 							{/* </NavHashLink> */}
 						</div>

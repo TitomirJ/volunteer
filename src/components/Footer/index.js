@@ -71,19 +71,35 @@ const Footer = () => {
 							</Link>
 						</div>
 					)}
-					<a
-						style={{ textDecoration: "none" }}
-						target='_blank'
-						rel='noreferrer'
-						// href={createOrder("", "ПОЖЕРТВОВАТЬ")}
-						href={link}>
+					<Grid
+						alignItems='center'
+						justifyContent='center'
+						item
+						xs={5}
+						gap={3}
+						container>
 						<Button
+							style={{ color: "white" }}
+							to='/documents'
 							variant='outline'
 							fontSize={!matches && "10px"}
 							width={matches ? "270px" : "130px"}>
-							<FormattedMessage id='navbar.pay' />
+							<FormattedMessage id='docs' />
 						</Button>
-					</a>
+						<a
+							style={{ textDecoration: "none" }}
+							target='_blank'
+							rel='noreferrer'
+							// href={createOrder("", "ПОЖЕРТВОВАТЬ")}
+							href={link}>
+							<Button
+								variant='outline'
+								fontSize={!matches && "10px"}
+								width={matches ? "270px" : "130px"}>
+								<FormattedMessage id='navbar.pay' />
+							</Button>
+						</a>
+					</Grid>
 				</Grid>
 				<Grid
 					container

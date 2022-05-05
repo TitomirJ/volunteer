@@ -14,6 +14,7 @@ import FacebookIcon from "../../assests/icons/FacebookIcon";
 import TelegramIcon from "../../assests/icons/TelegramIcon";
 import LogoImg from "../../assests/images/Logo.png";
 import { useStyles } from "./styles";
+import { fontWeight, margin } from "@mui/system";
 
 const Footer = () => {
 	const { lang } = useContext(AppContext);
@@ -66,40 +67,33 @@ const Footer = () => {
 							<Link to='/contacts'>
 								<FormattedMessage id='navbar.contacts' />
 							</Link>
-							<Link to='/documents'>
+							{/* <Link to='/documents'>
 								<FormattedMessage id='docs' />
-							</Link>
+							</Link> */}
 						</div>
 					)}
-					<Grid
+					{/* <Grid
 						alignItems='center'
 						justifyContent='center'
 						item
 						xs={5}
 						gap={3}
-						container>
+						container> */}
+
+					<a
+						style={{ textDecoration: "none" }}
+						target='_blank'
+						rel='noreferrer'
+						// href={createOrder("", "ПОЖЕРТВОВАТЬ")}
+						href={link}>
 						<Button
-							style={{ color: "white" }}
-							to='/documents'
 							variant='outline'
 							fontSize={!matches && "10px"}
 							width={matches ? "270px" : "130px"}>
-							<FormattedMessage id='docs' />
+							<FormattedMessage id='navbar.pay' />
 						</Button>
-						<a
-							style={{ textDecoration: "none" }}
-							target='_blank'
-							rel='noreferrer'
-							// href={createOrder("", "ПОЖЕРТВОВАТЬ")}
-							href={link}>
-							<Button
-								variant='outline'
-								fontSize={!matches && "10px"}
-								width={matches ? "270px" : "130px"}>
-								<FormattedMessage id='navbar.pay' />
-							</Button>
-						</a>
-					</Grid>
+					</a>
+					{/* </Grid> */}
 				</Grid>
 				<Grid
 					container
@@ -111,6 +105,7 @@ const Footer = () => {
 						className={classes.linksToContact}>
 						+380 (98) 157 68 90
 					</a>
+
 					{!xsDevice && (
 						<a
 							href='mailto:bfIlovelife@gmail.com'
@@ -118,6 +113,18 @@ const Footer = () => {
 							bfIlovelife@gmail.com
 						</a>
 					)}
+					<Link
+						style={{
+							color: "white",
+							marginRight: "12px",
+							fontWeight: "bold",
+						}}
+						to='/documents'
+						variant='outline'
+						fontSize={!matches && "10px"}
+						width={matches ? "270px" : "130px"}>
+						<FormattedMessage id='docs' />
+					</Link>
 					{matches && (
 						<div className={classes.socialIconsBlock}>
 							<a
@@ -126,6 +133,7 @@ const Footer = () => {
 								rel='noreferrer'>
 								<LinkedInIcon />
 							</a>
+
 							{/* <a href="tel:+380 (98) 157 68 90">
                 <PhoneIcon />
               </a> */}
@@ -144,6 +152,7 @@ const Footer = () => {
 								rel='noreferrer'>
 								<TelegramIcon />
 							</a>
+
 							{/* <a target="_blank" href="https://twitter.com/nazustrichzhit1">
                 <TwitterIcon />
               </a> */}

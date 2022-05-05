@@ -1,26 +1,16 @@
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10vh;
-  position: relative;
-  padding: 2px 0 0;
-  height: 100vh;
+.list {
+	margin-top: 20px;
 
-  .list {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
 }
 
 .preview {
-  height: 400px;
-  width: 400px;
+	height: 350px;
+	width: 300px;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }

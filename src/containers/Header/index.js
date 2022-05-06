@@ -63,7 +63,7 @@ const Header = () => {
 							rel='noreferrer'
 							// href={createOrder("", "ПОЖЕРТВОВАТЬ")}>
 							href='https://secure.wayforpay.com/button/b3f4980e74803'> */}
-						<Button
+						{/* <Button
 							variant='yellowPrimary'
 							onClick={() =>
 								runWfpWdgt(
@@ -71,7 +71,7 @@ const Header = () => {
 								)
 							}>
 							<FormattedMessage id='help' />
-						</Button>
+						</Button> */}
 						{/* </a> */}
 					</div>
 				</div>
@@ -97,7 +97,7 @@ const Header = () => {
 							rel='noreferrer'
 							// href={createOrder("", "ПОЖЕРТВОВАТЬ")}>
 							href='https://secure.wayforpay.com/button/b3f4980e74803'> */}
-						<Button
+						{/* <Button
 							variant='primary'
 							onClick={() =>
 								runWfpWdgt(
@@ -105,7 +105,7 @@ const Header = () => {
 								)
 							}>
 							<FormattedMessage id='help' />
-						</Button>
+						</Button> */}
 						{/* </a> */}
 					</div>
 				</div>
